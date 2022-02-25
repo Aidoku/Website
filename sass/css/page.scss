@@ -1,0 +1,17 @@
+@import 'theme';
+
+// Markdown content container
+.doc {
+	padding: 2.2rem 2.5rem;
+	color: $textColor;
+	max-width: 52rem;
+	margin: 0 auto;
+
+	@import 'markdown';
+}
+
+@media only screen and (max-width: $TabletSize) {
+	.doc {
+		padding: 2.2rem 2rem;
+	}
+}

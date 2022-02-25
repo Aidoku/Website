@@ -1,0 +1,30 @@
+{% extends "page.html" %}
+
+{% block title %}{{ section.title }} | {{ config.title }}{% endblock title %}
+
+{% block content %}
+	<main class="page">
+		<div class="doc">
+			{# WARNING: Only supports 2 subsections deep #}
+			{% if section.path == current_path %}
+				{{ section.content | safe }}
+			{% else %}
+				{% for p in section.subsections %}
+					{% set subsection = get_section(path=p) %}
+					{% if subsection.path == current_path %}
+						{{ subsection.content | safe }}
+					{% else %}
+						{% if current_path is starting_with(subsection.path) %}
+							{% for p in subsection.subsections %}
+							{% set subsection = get_section(path=p) %}
+								{% if subsection.path == current_path %}
+									{{ subsection.content | safe }}
+								{% endif %}
+							{% endfor %}
+						{% endif %}
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		</div>
+	</main>
+{% endblock content %}

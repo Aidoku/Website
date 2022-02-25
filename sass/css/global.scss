@@ -1,0 +1,123 @@
+@import 'theme';
+@import 'navbar';
+@import 'sidebar';
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: $tintColor;
+}
+
+// Buttons
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1.5rem;
+	border-radius: 0.4rem;
+	font-size: 1rem;
+	font-weight: 500;
+	color: white;
+	background-color: $tintColor;
+	cursor: pointer;
+
+	&:hover {
+		background-image: linear-gradient(rgba($tintColor, 0.02) 0 0);
+	}
+}
+
+// Colors
+.bg-white {
+	background-color: white;
+}
+
+.bg-tint {
+	background-color: $tintColor;
+}
+
+.color-white {
+	color: white;
+}
+
+.color-tint {
+	color: $tintColor;
+}
+
+.bg-light-tint {
+	background-color: rgba($tintColor, 0.06);
+	color: $tintColor;
+}
+
+// Root container
+.root {
+	padding-top: $navbarHeight;
+}
+
+.page {
+	padding-left: $sidebarWidth;
+}
+
+// Info blocks
+.block {
+	padding: 0.1rem 1.5rem;
+	margin: 1rem 0;
+	border-radius: 0.3rem;
+	border: 1px solid;
+
+	// headers
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		margin-top: 1rem;
+		margin-bottom: -0.4rem;
+	}
+
+	// colors
+	&.success {
+		border-color: #c9eec6;
+		background-color: #eefcee;
+		color: #00bf0a;
+	}
+	&.info {
+		border-color: #d4d4d4;
+		background-color: #f3f3f3;
+		color: #494949;
+	}
+	&.warning {
+		border-color: #eee7c6;
+		background-color: #fcf9ee;
+		color: #bf9e00;
+	}
+	&.danger {
+		border-color: #eec6c6;
+		background-color: #fceeee;
+		color: #bf0000;
+	}
+}
+
+// Hide elements meant only for mobile screens
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: $SmallDesktopSize) {
+	.page {
+		padding-left: $sidebarSmallerWidth;
+	}
+}
+
+@media only screen and (max-width: $TabletSize) {
+	.page {
+		padding-left: 0;
+	}
+
+	.mobile {
+		display: flex;
+	}
+}
