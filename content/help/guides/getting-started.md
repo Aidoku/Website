@@ -11,7 +11,7 @@ Aidoku can be installed using TestFlight or through a service like AltStore that
 
 ### TestFlight Installation
 
-1. Join the Aidoku [Discord](https://discord.com/invite/9U8cC5Zk3s) server.
+1. Join the Aidoku [Discord](https://discord.com/invite/9U8cC5Zk3s) server
 2. In the **#rules** channel, click the button labeled "**Send me Instructions**"
 3. Respond to the DM from the Aidoku bot by using the **/invite** command and providing your email
 4. Check your email for an email inviting you to the beta, and press "**View in Testflight**"
@@ -30,9 +30,11 @@ Issues installing Aidoku? Ask for support in the [Discord](https://discord.com/i
 
 ## Installing a source
 
-Once Aidoku has been installed, you can navigation to the **Browse** tab to install a source.
+Once Aidoku has been installed, you will need to use a source in order to add content to your library.
 
-Simply choose which source you would like and press the **GET** button next to it. Source settings can be configured by tapping the source once it's installed and pressing the ellipsis button in the top right.
+Sources are distributed in .aix packages that can be installed by opening them inside Aidoku. Alternatively, source lists can be added in the settings page which allow installation directly from the Browse tab.
+
+To find public sources and source lists, we recommend checking the [Discord](https://discord.com/invite/9U8cC5Zk3s).
 
 ---
 
