@@ -28,7 +28,7 @@ Visit our translation project [here](https://hosted.weblate.org/engage/aidoku/).
 
 ### Project status
 <a href="https://hosted.weblate.org/engage/aidoku/">
-<img src="https://hosted.weblate.org/widgets/aidoku/-/strings/horizontal-auto.svg" alt="Translation status" />
+    <img src="https://hosted.weblate.org/widgets/aidoku/-/strings/horizontal-auto.svg" alt="Translation status" />
 </a>
 
 ## Donation
