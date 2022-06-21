@@ -12,6 +12,9 @@
 		<meta name="keywords" content="iOS app, Manga, Reading, Download, TestFlight, AltStore">
 		<meta name="theme-color" content="#ff375f">
 
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="images/favicon-32x32.png") | safe }}">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="images/apple-touch-icon.png") | safe }}">
+
 		{% block css %}
 			<link rel="stylesheet" href="{{ get_url(path="css/global.css") | safe }}">
 			<link rel="stylesheet" href="{{ get_url(path="css/home.css") | safe }}">
@@ -31,7 +34,7 @@
 							<span class="line"></span>
 							<span class="line"></span>
 						</div>
-						<a href="/" class="title">読</a>
+						<a href="/" class="title"><div class="icon"></div></a>
 						{% if not home %}
 						<a href="/" class="title bold mobile">Aidoku</a>
 						{% endif %}
@@ -63,7 +66,7 @@
 						<header class="header">
 							{% block header_content %}
 								<div class="title">
-									<span>読</span>
+									<span class="icon"></span>
 									<span>Aidoku</span>
 								</div>
 								<div class="buttons">
