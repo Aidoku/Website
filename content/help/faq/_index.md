@@ -41,7 +41,7 @@ Enable badges by navigating to Settings and check the **Unread Chapter Badges** 
 
 ### User Interface
 #### Can I change the app language?
-Open the Settings app → Aidoku → Languages ([jump](prefs:root=xyz.skitty.Aidoku)) and select your language. The app will restart automatically to apply changes.
+Open the Settings app → Aidoku → Languages and select your language. The app will restart automatically to apply changes.
 
 If your language isn't in the list, or the translations aren't good enough, consider helping translate the app on [Weblate](https://hosted.weblate.org/engage/aidoku/).
 
