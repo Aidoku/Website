@@ -2,6 +2,7 @@
 title = "Contribution"
 weight = 3
 sort_by = "weight"
+insert_anchor_links = "left"
 +++
 # Contribution
 ## Code
@@ -27,13 +28,13 @@ Interested in translating Aidoku? We use [Weblate](https://weblate.org) to crowd
 Visit our translation project [here](https://hosted.weblate.org/engage/aidoku/).
 
 ### Project status
-<a href="https://hosted.weblate.org/engage/aidoku/">
+<a href="https://hosted.weblate.org/engage/aidoku/" target="_blank" class="no-external-icon">
     <img src="https://hosted.weblate.org/widgets/aidoku/-/strings/horizontal-auto.svg" alt="Translation status" />
 </a>
 
 ## Donation
 Support [Skitty](https://github.com/Skittyblock) on [Ko-Fi](https://ko-fi.com/skittyblock):
 
-<a href="https://ko-fi.com/skittyblock" target="_blank" rel="noopener">
+<a href="https://ko-fi.com/skittyblock" target="_blank" rel="noopener" class="no-external-icon">
     <img height="36" src="https://cdn.ko-fi.com/cdn/kofi1.png?v=2" border="0" alt="Buy Me a Coffee at ko-fi.com" style="border: 0px; height: 36px;">
 </a>

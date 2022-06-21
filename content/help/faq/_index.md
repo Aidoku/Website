@@ -1,6 +1,7 @@
 +++
 title = "Frequently Asked Questions"
 sort_by = "weight"
+insert_anchor_links = "left"
 +++
 # Frequently Asked Questions
 
