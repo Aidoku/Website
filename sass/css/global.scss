@@ -72,32 +72,59 @@ a {
 	border-radius: 0.3rem;
 	border: 1px solid;
 
+	border-color: #d4d4d4;
+	background-color: #f3f3f3;
+	color: #494949;
+
 	// headers
 	> h1, > h2, > h3, > h4, > h5, > h6 {
 		margin-top: 1rem;
 		margin-bottom: -0.4rem;
 	}
 
+	> h4 {
+		font-size: 1.1rem;
+		margin-top: -3.5rem !important;
+		margin-bottom: -0.2rem !important;
+	}
+
+	> p {
+		margin-top: 0.8rem;
+		margin-bottom: 0.8rem;
+	}
+
 	// colors
+	&.info {
+		border-color: #c6d5ee;
+		background-color: #f4faff;
+		color: #204b8b;
+		a {
+			color: #1b3a69;
+		}
+	}
 	&.success {
 		border-color: #c9eec6;
 		background-color: #eefcee;
-		color: #00bf0a;
-	}
-	&.info {
-		border-color: #d4d4d4;
-		background-color: #f3f3f3;
-		color: #494949;
+		color: #005004;
+		a {
+			color: #00ac09;
+		}
 	}
 	&.warning {
 		border-color: #eee7c6;
 		background-color: #fcf9ee;
-		color: #bf9e00;
+		color: #927a00;
+		a {
+			color: #d2af00;
+		}
 	}
 	&.danger {
 		border-color: #eec6c6;
 		background-color: #fceeee;
 		color: #bf0000;
+		a {
+			color: #860000;
+		}
 	}
 }
 

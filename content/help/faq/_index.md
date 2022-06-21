@@ -1,5 +1,5 @@
 +++
-title = "Frequently Asked Questions"
+title = "FAQ"
 sort_by = "weight"
 insert_anchor_links = "left"
 +++
@@ -18,7 +18,8 @@ There are not currently any plans for making it onto the App Store at the moment
 
 #### How can I request a new feature?
 You can open a feature request on the [issue tracker](https://github.com/Aidoku/Aidoku/issues).
-{% notice(type="notice") %}
+
+{% block(type="info") %}
 Please make sure the feature [hasn't been requested yet](https://github.com/Aidoku/Aidoku/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement) before opening an issue.
 {% end %}
 
@@ -53,7 +54,7 @@ If your language isn't in the list, or the translations aren't good enough, cons
 #### What are some recommended extensions? What source is the best? What is the replacement for source X? Where to read manga Y?
 Aidoku does not endorse or recommend any manga sources, and users are encouraged to spend some time trying out a few sources themselves and find out what works best for them. 
 
-{% notice(type="notice") %}
+{% block(type="info") %}
 Aidoku does not host any content, nor is Aidoku responsible for any sources that are slow, down, missing chapters, or subpar image quality.
 {% end %}
 
