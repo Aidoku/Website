@@ -7,10 +7,10 @@ insert_anchor_links = "left"
 
 ## Application
 ### General
-#### How do I install this app?
+#### How do I install Aidoku?
 Check the [Getting Started](/help/guides/getting-started) guide for instructions.
 
-#### Does the app expire in X days?
+#### Does Aidoku expire in X days?
 The expiration counter resets to 90 days every time a new update is released, and since updates are fairly frequent you won't have to worry about the app expiring.
 
 #### Will Aidoku be on the App Store?
@@ -24,7 +24,7 @@ Please make sure the feature [hasn't been requested yet](https://github.com/Aido
 {% end %}
 
 ### iCloud Sync
-#### My library is not being synced across my devices
+#### Why isn't my library always being synced across devices?
 iCloud Sync is still somewhat buggy at the moment and it's hit or miss if the syncing actually works. Consider toggling it off and on again.
 
 ### Library
@@ -38,7 +38,7 @@ Enable badges by navigating to Settings and check the **Unread Chapter Badges** 
 
 ### Reader
 #### Why aren't my chapters being marked as read?
-- You haven't reached the last page. If you are using the Vertical Scroll reader, use the progress bar to scrub to the very last page so Aidoku can mark the chapter as read.
+- You might not have reached the last page.
 - You may have **Incognito Mode** enabled. Navigate to Settings and disable **Incognito Mode** under the General section.
 
 ### User Interface
@@ -51,11 +51,11 @@ If your language isn't in the list, or the translations aren't good enough, cons
 
 ## Sources
 ### General
-#### What are some recommended extensions? What source is the best? What is the replacement for source X? Where to read manga Y?
+#### What are some recommended sources? Which source is the best? Where do I read manga X?
 Aidoku does not endorse or recommend any manga sources, and users are encouraged to spend some time trying out a few sources themselves and find out what works best for them. 
 
 {% block(type="info") %}
-Aidoku does not host any content, nor is Aidoku responsible for any sources that are slow, down, missing chapters, or subpar image quality.
+Aidoku does not host any content, nor is Aidoku responsible for any sources that are slow, down, missing chapters, or have subpar image quality.
 {% end %}
 
 #### Is source X down?

@@ -1,11 +1,11 @@
 +++
 title = "Backups"
-weight = 1
+weight = 2
 +++
 # Backups
+Aidoku backups allow you to transfer your Aidoku data accross devices as well as help prevent data loss.
 
 ## Backing up your data
-You should take regular backups of your data, in case anything bad happens.
 
 ### Creating a backup
 To create a backup, go to Settings → Backups and press the <img src="https://raw.githubusercontent.com/cyanzhong/sf-symbols-online/master/glyphs/plus.png" alt="plus" height="15" width="15"> icon on the top right. You should see a new backup entry titled "Backup \<current date\>".
