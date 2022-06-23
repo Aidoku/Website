@@ -7,9 +7,9 @@ a:not(.no-external-icon)[target=_blank]::after {
 }
 
 a.nav-link[target=_blank]::after {
-    filter: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="ff375f" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.21568 0 0 0 0 0.37255 0 0 0 1 0"/></filter></defs></svg>#ff375f')
+    filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxmaWx0ZXIgaWQ9ImZmMzc1ZiIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAxIDAgMCAwIDAgMC4yMTU2OCAwIDAgMCAwIDAuMzcyNTUgMCAwIDAgMSAwIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==#ff375f)
 }
 
 a:not(.nav-link)[target=_blank]::after {
-    filter: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="aaaaaa" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.66667 0 0 0 0 0.66667 0 0 0 0 0.66667 0 0 0 1 0"/></filter></defs></svg>#aaaaaa')
+    filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxmaWx0ZXIgaWQ9ImFhYWFhYSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwLjY2NjY3IDAgMCAwIDAgMC42NjY2NyAwIDAgMCAwIDAuNjY2NjcgMCAwIDAgMSAwIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==#aaaaaa)
 }
