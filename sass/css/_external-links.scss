@@ -7,9 +7,10 @@ a:not(.no-external-icon)[target=_blank]::after {
 }
 
 a.nav-link[target=_blank]::after {
-    filter: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="ff375f" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.21568 0 0 0 0 0.37255 0 0 0 1 0"/></filter></defs></svg>#ff375f')
+    filter: invert(31%) sepia(47%) saturate(3068%) hue-rotate(327deg) brightness(102%) contrast(101%);
+    left: 3px;
 }
 
 a:not(.nav-link)[target=_blank]::after {
-    filter: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="aaaaaa" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.66667 0 0 0 0 0.66667 0 0 0 0 0.66667 0 0 0 1 0"/></filter></defs></svg>#aaaaaa')
+    filter: invert(73%) sepia(8%) saturate(0%) hue-rotate(201deg) brightness(91%) contrast(93%)
 }

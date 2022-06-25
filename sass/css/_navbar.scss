@@ -31,6 +31,11 @@
 		align-items: center;
 		column-gap: 1rem;
 
+		.icon {
+			position: relative;
+			top: 0.25rem;
+		}
+
 		> .menu {
 			display: none;
 		}
@@ -38,14 +43,6 @@
 			font-size: 1.5rem;
 			font-weight: 400;
 			color: $tintColor;
-
-			.icon {
-				mask-image: url(/images/aidoku.svg);
-				background-color: $tintColor;
-				width: 1.5rem;
-				height: 1.5rem;
-				mask-size: 1.5rem;
-			}
 
 			&.bold {
 				font-weight: 450;
