@@ -7,9 +7,10 @@ a:not(.no-external-icon)[target=_blank]::after {
 }
 
 a.nav-link[target=_blank]::after {
-    filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxmaWx0ZXIgaWQ9ImZmMzc1ZiIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAxIDAgMCAwIDAgMC4yMTU2OCAwIDAgMCAwIDAuMzcyNTUgMCAwIDAgMSAwIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==#ff375f)
+    filter: invert(31%) sepia(47%) saturate(3068%) hue-rotate(327deg) brightness(102%) contrast(101%);
+    left: 3px;
 }
 
 a:not(.nav-link)[target=_blank]::after {
-    filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxmaWx0ZXIgaWQ9ImFhYWFhYSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwLjY2NjY3IDAgMCAwIDAgMC42NjY2NyAwIDAgMCAwIDAuNjY2NjcgMCAwIDAgMSAwIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==#aaaaaa)
+    filter: invert(73%) sepia(8%) saturate(0%) hue-rotate(201deg) brightness(91%) contrast(93%)
 }
