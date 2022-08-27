@@ -2,6 +2,7 @@
 title = "Backups"
 weight = 2
 +++
+
 # Backups
 Aidoku backups allow you to transfer your Aidoku data accross devices as well as help prevent data loss.
 

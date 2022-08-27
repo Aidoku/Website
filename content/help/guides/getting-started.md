@@ -12,19 +12,19 @@ Aidoku can be installed using TestFlight or through a service like AltStore that
 ### TestFlight Installation
 
 1. Join the Aidoku [Discord](https://discord.com/invite/9U8cC5Zk3s) server
-2. In the **#rules** channel, click the button labeled "**Send me Instructions**"
-3. Respond to the DM from the Aidoku bot by using the **/invite** command and providing your email
+2. In the **#rules** channel, click the button at the bottom labeled "**Sign Up**"
+3. Provide your email in the popup
 4. Check your email for an email inviting you to the beta, and press "**View in Testflight**"
 5. Download TestFlight from the App Store
 6. Install Aidoku from TestFlight after accepting the invitation
 
 ### Manual Installation
 
-Compiled ipa files can be optained from the GitHub [releases](https://github.com/Aidoku/Aidoku/releases) page. If you're jailbroken, have AltStore already set up, or have another method of installation, this is probably the simplest option.
+Compiled ipa files can be optained from the GitHub [releases](https://github.com/Aidoku/Aidoku/releases) page. If you're jailbroken, have AltStore already set up, or have another method of installation, this may be the simplest option, but also requires you to sideload a new ipa after every app update.
 
 ### Troubleshooting
 
-Issues installing Aidoku? Ask for support in the [Discord](https://discord.com/invite/9U8cC5Zk3s) server.
+Issues installing Aidoku? Ask for support in the [Discord](https://discord.com/invite/9U8cC5Zk3s) server in the **#support** channel.
 
 ---
 
@@ -42,6 +42,6 @@ To find public sources and source lists, we recommend checking the [Discord](htt
 
 Once have a source installed, you can find and add manga to your library.
 
-Start by pressing on your desired source. If the source supports listings, you can sort the manga list by using the listing dropdown menu. In addition, there will be a search bar at the top if the source supports searching by title.
+Start by opening your desired source in the **Browse** tab. If the source supports listings, you can sort the manga list by using the listing dropdown menu. In addition, there will be a search bar at the top if the source supports searching by title.
 
 When you find your desired manga, open it and tap on the bookmark icon. Alternatively, you can long press on the manga and select **Add to Library**. Once added to your library, the manga should appear in the **Library** tab.
