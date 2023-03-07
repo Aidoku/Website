@@ -12,7 +12,7 @@ Aidoku can be installed using TestFlight or through a service like AltStore that
 ### TestFlight Installation
 
 1. Join the Aidoku [Discord](https://discord.com/invite/9U8cC5Zk3s) server
-2. In the **#rules** channel, click the button at the bottom labeled "**Sign Up**"
+2. In the **#install-info** channel, click the button at the bottom labeled "**Join Beta**"
 3. Provide your email in the popup
 4. Check your email for an email inviting you to the beta, and press "**View in Testflight**"
 5. Download TestFlight from the App Store
