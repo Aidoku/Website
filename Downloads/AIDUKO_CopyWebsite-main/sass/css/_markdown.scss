@@ -1,0 +1,84 @@
+@import 'theme';
+
+// Markdown styles
+// .doc {
+
+	> h1:first-child {
+		// margin-top: 0;
+		margin-top: -4.5rem;
+	}
+
+	// > h1:first-child + p {
+	// 	// margin-top: 1.5rem;
+	// 	margin-top: -2.5rem;
+	// }
+
+	h1 + h2,
+	h1 + h3,
+	h2 + h3 {
+		// margin-top: 1.5rem;
+		// background-color: red;
+
+		margin-top: -3rem;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+		// margin-top: 2rem;
+		line-height: 1.25;
+		font-weight: 500;
+
+		margin-top: -2.5rem;
+		padding-top: 4.5rem; // to make scrolling go to correct place
+	}
+	h1 {
+		font-weight: 550;
+		font-size: 2rem;
+		// margin-top: 2rem;
+	}
+	h2 {
+		// margin-top: 1rem;
+		// margin-top: -4rem;
+		font-size: 1.7rem;
+		// padding-bottom: 0.2rem;
+	}
+	h3 {
+		font-size: 1.3rem;
+		margin-top: -3rem;
+	}
+	h4 {
+		font-size: 1.1rem;
+		margin-top: -3.5rem;
+		line-height: 1.5;
+	}
+
+	p {
+		font-weight: 300;
+		line-height: 1.7;
+	}
+	strong {
+		font-weight: 500;
+	}
+	a {
+		font-weight: 400;
+		// color: map-get($map: $tint, $key: 'regular');
+	}
+
+	hr {
+		height: 1px;
+		background-color: $separatorColor;
+		border: unset;
+		// margin: 1.6rem 0;
+		margin-top: 2.5rem;
+	}
+	ul,
+	ol {
+		line-height: 1.7;
+		font-weight: 300;
+	}
+// }

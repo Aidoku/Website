@@ -1,0 +1,8 @@
+{# block(type=?) #}
+{# types: info, success, warning, danger #}
+<div class="block {{ type }}" {% if id %}id="{{ id }}"{% endif %}>
+    {% if title %}
+    <h4>{{ title }}</h4>
+    {% endif %}
+    <p>{{ body | markdown(inline=true) | safe }}</p>
+</div>

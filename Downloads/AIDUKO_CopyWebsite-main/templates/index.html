@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+		<meta name="description" content="Free and open source manga reader for iOS">
+		<meta name="keywords" content="iOS app, Manga, Reading, Download, TestFlight, AltStore">
+		<meta name="theme-color" content="#ff375f">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="images/favicon-32x32.png") | safe }}">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="images/apple-touch-icon.png") | safe }}">
+
+		{% block css %}
+			<link rel="stylesheet" href="{{ get_url(path="css/global.css") | safe }}">
+			<link rel="stylesheet" href="{{ get_url(path="css/home.css") | safe }}">
+		{% endblock css %}
+
+		{% block extra_head %}
+		{% endblock extra_head %}
+    </head>
+	<body>
+		{% set home = section and section.title == 'index' %}
+		<div class="root{% if home %} no-sidebar{% endif %}">
+			{% block nav %}
+				<header class="navbar {% if not home %}border{% endif %}">
+					<div class="left">
+						<div class="hamburger mobile" onclick="toggleSidebar()">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</div>
+						
+						<a href="/" class="title" aria-label="Homepage"><img class="icon" width="24" height="24" src="/static/images/aidoku.svg" alt="Aiduko logo"></a>
+						{% if not home %}
+						<a href="/" class="title bold mobile">Aidoku</a>
+						{% endif %}
+					</div>
+					<div class="links">
+						<a href="/" class="nav-link {% if home %}active{% endif %}">Home</a>
+						<a href="/help" class="nav-link {% if not home %}active{% endif %}">Help</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+				</header>
+			{% endblock nav %}
+
+			{% block sidebar %}
+				<div class="sidebar-mask" onclick="toggleSidebar()"></div>
+				<aside class="sidebar">
+					<div class="nav-links">
+						<a href="/" class="nav-link {% if home %}active{% endif %}">Home</a>
+						<a href="/help" class="nav-link {% if not home %}active{% endif %}">Help</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+					{% block sidebar_content %}
+					{% endblock sidebar_content %}
+				</aside>
+			{% endblock sidebar %}
+
+			{% block content %}
+				<main {% if home %}class="home"{% endif %}>
+					{% block header %}
+						<header class="header">
+							{% block header_content %}
+								<div class="title">
+									<img class="icon" width="91.2" height="91.2" src="/static/images/aidoku.svg">
+									<span>Aidoku</span>
+								</div>
+								<div class="buttons">
+									<a href="/help/guides/getting-started" class="button bg-white color-tint">Download</a>
+									<a href="/help/" class="button bg-light-tint">Help</a>
+								</div>
+							{% endblock header_content %}
+						</header>
+					{% endblock header %}
+
+					{% block page_content %}
+						<section>
+							<div class="features">
+								<div class="feature">
+									<div class="details">
+										<h2>External Sources</h2>
+										<p>Add a multitude of external sources to browse hundreds of different titles.</p>
+									</div>
+									<div class="image">
+										<img src="/static/images/library.png" alt="Library" />
+									</div>
+								</div>
+								<div class="feature">
+									<div class="details">
+										<h2>Open Source</h2>
+										<p>Fully open source and ad-free, forever. Contribute on GitHub!</p>
+									</div>
+									<div class="image">
+										<img src="/images/source.png" alt="Source" />
+									</div>
+								</div>
+								<div class="feature">
+									<div class="details">
+										<h2>Configurable</h2>
+										<p>Customize Aidoku to your liking with global and source-specific settings.</p>
+									</div>
+									<div class="image">
+										<img src="/images/reader.png" alt="Reader" />
+									</div>
+								</div>
+							</div>
+						</section>
+					{% endblock home_content %}
+					
+					<footer>
+						{% block footer %}
+							<div class="copyright">© Skitty</div>
+							<div class="detail">
+								Designed and developed by <a href="https://twitter.com/Skittyblock" target="_BLANK">Skitty</a>.<br/>
+								Contribute on <a href="https://github.com/Aidoku/Website" target="_BLANK">GitHub</a>.
+							</div>
+						{% endblock footer %}
+					</footer>
+				</main>
+			{% endblock content %}
+		</div>
+
+		{% block js %}
+			<script charset="utf-8" src="{{ get_url(path="js/sidebar.js") | safe }}"></script>
+		{% endblock js %}
+	</body>
+</html>

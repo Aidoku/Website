@@ -1,0 +1,86 @@
+{% extends "index.html" %}
+
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
+
+{% block css %}
+	<link rel="stylesheet" href="{{ get_url(path="css/global.css") | safe }}">
+	<link rel="stylesheet" href="{{ get_url(path="css/page.css") | safe }}">
+{% endblock css %}
+
+{% block sidebar_content %}
+	{% set section = get_section(path="help/_index.md") %}
+	<ul class="sidebar-links">
+	{% for p in section.subsections %}
+		{% set subsection = get_section(path=p) %}
+		<li>
+			{# if current_path is starting_with(subsection.path) %}active{% endif #}
+			{% if subsection.toc %}
+				<a href="{{subsection.permalink | safe }}" class="sidebar-heading sidebar-link">
+					{{ subsection.title }}
+				</a>
+			{% else %}
+				<span class="sidebar-heading">
+					{{ subsection.title }}
+				</span>
+			{% endif %}
+			<ul class="sidebar-links">
+				{% if subsection.pages %}
+					{% for page in subsection.pages %}
+						<li>
+							<section class="sidebar-group">
+								<a href="{{page.permalink | safe }}" class="sidebar-link {% if current_path == page.path %}active{% endif %}">
+									{{ page.title }}
+								</a>
+								{% if page.toc %}
+									{% if current_path == page.path %} 
+										<ul class="sidebar-sub-headers">
+											{# only h2 children of the first h1 #}
+											{% for h2 in page.toc[0].children %}
+												<li class="sidebar-sub-header">
+													<a href="{{h2.permalink | safe }}" data-doc-association="{{ h2.id }}" class="sidebar-link">
+														{{ h2.title }}
+													</a>
+												</li>
+											{% endfor %}
+										</ul>
+									{% endif %}
+								{% endif %}
+							</section>
+						</li>
+					{% endfor %}
+				{% else %}
+					{% if subsection.toc %}
+						{% for h2 in subsection.toc[0].children %}
+							<li>
+								<section class="sidebar-group">
+									<a href="{{h2.permalink | safe }}" data-doc-association="{{ h2.id }}" class="sidebar-link">
+										{{ h2.title }}
+									</a>
+									{% if current_path is starting_with(subsection.path) %}
+										<ul class="sidebar-sub-headers">
+											{% for h3 in h2.children %}
+												<li class="sidebar-sub-header">
+													<a href="{{h3.permalink | safe }}" data-doc-association="{{ h3.id }}" class="sidebar-link">
+														{{ h3.title }}
+													</a>
+												</li>
+											{% endfor %}
+										</ul>
+									{% endif %}
+								</section>
+							</li>
+						{% endfor %}
+					{% endif %}
+				{% endif %}
+			</ul>
+		</li>
+	{% endfor %}
+{% endblock sidebar_content %}
+
+{% block content %}
+	<main class="page">
+		<div class="doc">
+			{{ page.content | safe }}
+		</div>
+	</main>
+{% endblock content %}
