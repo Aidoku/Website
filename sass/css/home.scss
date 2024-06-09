@@ -30,8 +30,8 @@
 
 				// logo
 				&:first-child {
-					font-size: 5.7rem;
-					mask-image: url(/images/aidoku.svg);
+					///images/aidoku.svg
+					mask-image: url(static/images/aidoku.svg);
 					background-color: $tintColor;
 					width: 5.7rem;
 					height: 5.7rem;
