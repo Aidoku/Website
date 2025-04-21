@@ -18,6 +18,12 @@ Aidoku can be installed using TestFlight or through a service like AltStore that
 5. Download TestFlight from the App Store
 6. Install Aidoku from TestFlight after accepting the invitation
 
+### AltStore / SideStore source
+
+You can add the following source link to AltStore or SideStore: `https://raw.githubusercontent.com/Aidoku/Aidoku/altstore/apps.json`
+To do so, go to the "Sources" tab, tap on the "+" sign, paste the link then finalize the source addition.
+Please notre that AltStore PAL is NOT supported.
+
 ### Manual Installation
 
 Compiled ipa files can be optained from the GitHub [releases](https://github.com/Aidoku/Aidoku/releases) page. If you're jailbroken, have AltStore already set up, or have another method of installation, this may be the simplest option, but also requires you to sideload a new ipa after every app update.
