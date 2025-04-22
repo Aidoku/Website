@@ -22,7 +22,7 @@ Aidoku can be installed using TestFlight or through a service like AltStore that
 
 You can add the following source link to AltStore or SideStore: `https://raw.githubusercontent.com/Aidoku/Aidoku/altstore/apps.json`
 To do so, go to the "Sources" tab, tap on the "+" sign, paste the link then finalize the source addition.
-Please notre that AltStore PAL is NOT supported.
+Please note that AltStore PAL is NOT supported.
 
 ### Manual Installation
 
