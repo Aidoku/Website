@@ -12,10 +12,9 @@ Want to help out with developing the app or supporting the creation of the app?
 The Aidoku application.
 - [Aidoku/Aidoku](https://github.com/Aidoku/Aidoku) ![issue count badge](https://img.shields.io/github/issues/aidoku/aidoku?style=social)
 
-### Source wrappers
-Supporting libraries for Aidoku sources.
-- Rust: [Aidoku/aidoku-rs](https://github.com/Aidoku/aidoku-rs)
-- AssemblyScript: [Aidoku/aidoku-as](https://github.com/Aidoku/aidoku-as)
+### Source Library
+The source API wrapper for Rust.
+- [Aidoku/aidoku-rs](https://github.com/Aidoku/aidoku-rs)
 
 ### Website
 The website you're reading this on.

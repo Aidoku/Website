@@ -36,16 +36,16 @@ Issues installing Aidoku? Ask for support in the [Discord](https://discord.com/i
 
 Once Aidoku has been installed, you will need to use a source in order to add content to your library.
 
-Sources are distributed in .aix packages that can be installed by opening them inside Aidoku. Alternatively, source lists can be added in the settings page which allow installation directly from the Browse tab.
+Some built-in sources are available by default by pressing the add button in the **Browse** tab. External sources are distributed in .aix packages that can be installed by importing them inside Aidoku. Alternatively, source lists can be added in the settings page which allow installation directly from the Browse tab.
 
-To find public sources and source lists, we recommend checking the [Discord](https://discord.com/invite/9U8cC5Zk3s).
+Note that all external sources are unofficial and not affiliated with Aidoku. Use them at your own risk.
 
 ---
 
-## Adding manga to your library
+## Adding content to your library
 
-Once have a source installed, you can find and add manga to your library.
+Once have a source installed, you can find and add content to your library.
 
-Start by opening your desired source in the **Browse** tab. If the source supports listings, you can sort the manga list by using the listing dropdown menu. In addition, there will be a search bar at the top if the source supports searching by title.
+Start by opening your desired source in the **Browse** tab. There will be a search icon or search bar at the top allowing you to search for content the source provides.
 
-When you find your desired manga, open it and tap on the bookmark icon. Alternatively, you can long press on the manga and select **Add to Library**. Once added to your library, the manga should appear in the **Library** tab.
+When you find your desired content, open it and tap on the bookmark icon. Alternatively, you can long press on the item and select **Add to Library**. Once added to your library, the item should appear in the **Library** tab.

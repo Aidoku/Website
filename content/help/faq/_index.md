@@ -10,11 +10,8 @@ insert_anchor_links = "left"
 #### How do I install Aidoku?
 Check the [Getting Started](/help/guides/getting-started) guide for instructions.
 
-#### Does Aidoku expire in X days?
-The expiration counter resets to 90 days every time a new update is released, and since updates are fairly frequent you won't have to worry about the app expiring.
-
 #### Will Aidoku be on the App Store?
-There are not currently any plans for making it onto the App Store at the moment because a lot of things still need to be changed and added before that could happen. It's not out of the question for the future, but it likely will not happen for a while.
+Aidoku is still beta software, but is working its way towards a stable release in the future. Plans have not been made yet for an App Store release, but the goal is for that to happen eventually.
 
 #### How can I request a new feature?
 You can open a feature request on the [issue tracker](https://github.com/Aidoku/Aidoku/issues).
@@ -33,7 +30,7 @@ Enable badges by navigating to Settings and check the **Unread Chapter Badges** 
 
 ### Browse
 #### Why can't I see some sources?
-- By default, only multi-language sources and sources in your [Preferred Languages list](https://osxdaily.com/2021/07/01/set-preferred-language-change-region-iphone-ipad/#:~:text=Head%20over%20to%20%E2%80%9CSettings%E2%80%9D%20from,default%20language%20for%20your%20iPhone.) are shown. Enable more languages by navigating to Browse, selecting the globe icon on the top right, and select the languages you want.
+- By default, only multi-language sources and sources in your [Preferred Languages list](https://osxdaily.com/2021/07/01/set-preferred-language-change-region-iphone-ipad/#:~:text=Head%20over%20to%20%E2%80%9CSettings%E2%80%9D%20from,default%20language%20for%20your%20iPhone.) are shown. Enable more languages by navigating to Browse and opening the add source page, selecting the globe icon on the top right, and then selecting the languages you want.
 - NSFW sources are hidden by default. Navigate to Settings and enable **Show NSFW Sources** under the Browse section.
 
 ### Reader
@@ -52,11 +49,8 @@ If your language isn't in the list, or the translations aren't good enough, cons
 ## Sources
 ### General
 #### What are some recommended sources? Which source is the best? Where do I read manga X?
-Aidoku does not endorse or recommend any manga sources, and users are encouraged to spend some time trying out a few sources themselves and find out what works best for them. 
+Aidoku does not endorse or recommend any external sources, and users are encouraged to spend some time trying out a few sources themselves and find out what works best for them.
 
 {% block(type="info") %}
 Aidoku does not host any content, nor is Aidoku responsible for any sources that are slow, down, missing chapters, or have subpar image quality.
 {% end %}
-
-#### Is source X down?
-Check the actual source's website first. If the website loads but Aidoku doesn't, join the Aidoku [Discord](https://discord.com/invite/9U8cC5Zk3s) server for help.
