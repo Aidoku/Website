@@ -12,6 +12,18 @@
 		background-color: $backgroundColor;
 	}
 
+	// make content under navbar the same color as the header for overscroll
+	&::before {
+		$topPadding: 4rem;
+		content: "";
+		position: relative;
+		display: block;
+		background: $lightTintColor;
+		height: $topPadding;
+		top: -$topPadding;
+		margin-bottom: -$topPadding;
+	}
+
 	header {
 		flex-direction: column;
 		align-items: center;
