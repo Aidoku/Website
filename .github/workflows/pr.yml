@@ -1,0 +1,13 @@
+name: Build
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build
+        uses: shalzz/zola-deploy-action@v0.21.0
+        env:
+          BUILD_ONLY: true
+          BUILD_FLAGS: --drafts
