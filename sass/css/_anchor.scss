@@ -1,12 +1,12 @@
-@import 'theme';
+@import "theme";
 
 .zola-anchor {
-    opacity: 0;
-    float: left;
-    margin-left: -.87em;
-    padding-right: .23em;
-    margin-top: .125em;
-    font-size: .85em;
+	opacity: 0;
+	float: left;
+	margin-left: -0.87em;
+	padding-right: 0.23em;
+	margin-top: 0.125em;
+	font-size: 0.85em;
 }
 
 h1:focus .zola-anchor,
@@ -21,5 +21,5 @@ h5:focus .zola-anchor,
 h5:hover .zola-anchor,
 h6:focus .zola-anchor,
 h6:hover .zola-anchor {
-    opacity: 1
+	opacity: 1;
 }

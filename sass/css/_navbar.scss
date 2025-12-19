@@ -1,7 +1,6 @@
-@import 'theme';
-@import 'external-links';
+@import "theme";
+@import "external-links";
 
-// Navbar
 .navbar {
 	position: fixed;
 	top: 0;
@@ -75,7 +74,6 @@
 	}
 }
 
-// Hamburger menu
 .hamburger {
 	cursor: pointer;
 	height: 0.9rem;

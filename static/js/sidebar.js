@@ -36,7 +36,11 @@ function getHeaderDepth(el) {
 		beneathMinDepth: false,
 		noSidebarLink: false,
 		get error() {
-			return this.invalidElement || this.beneathMinDepth || this.noSidebarLink;
+			return (
+				this.invalidElement ||
+				this.beneathMinDepth ||
+				this.noSidebarLink
+			);
 		},
 	};
 	if (el.nodeName.length != 2 || el.nodeName[0] != "H") {
@@ -82,7 +86,11 @@ function processEl({ targetEl, highlightNextElements, setHashMode }) {
 		}
 		let elDepth = getHeaderDepth(el);
 		let setBg = true;
-		if (!elDepth.invalidElement && !elDepth.beneathMinDepth && elDepth.noSidebarLink) {
+		if (
+			!elDepth.invalidElement &&
+			!elDepth.beneathMinDepth &&
+			elDepth.noSidebarLink
+		) {
 			setBg = false;
 		} else if (elDepth.error) {
 			continue;
@@ -90,7 +98,7 @@ function processEl({ targetEl, highlightNextElements, setHashMode }) {
 		elDepth = elDepth.depth;
 		baseEl = el;
 		baseDepth = elDepth;
-		for (let el; el = observedActiveElems.pop();) {
+		for (let el; (el = observedActiveElems.pop()); ) {
 			let sidebarElem = elemMap.get(el);
 			sidebarElem.classList.remove("active");
 			delete el.dataset.observedActive;
@@ -104,7 +112,11 @@ function processEl({ targetEl, highlightNextElements, setHashMode }) {
 		break;
 	}
 
-	for (let el = baseEl.previousElementSibling, currDepth = baseDepth; el && currDepth > minDepth; el = el.previousElementSibling) {
+	for (
+		let el = baseEl.previousElementSibling, currDepth = baseDepth;
+		el && currDepth > minDepth;
+		el = el.previousElementSibling
+	) {
 		let elDepth = getHeaderDepth(el);
 		if (elDepth.error || elDepth.depth != currDepth - 1) {
 			continue;
@@ -114,7 +126,11 @@ function processEl({ targetEl, highlightNextElements, setHashMode }) {
 	}
 
 	if (highlightNextElements) {
-		for (let el = baseEl.nextElementSibling, currDepth = baseDepth; el; el = el.nextElementSibling) {
+		for (
+			let el = baseEl.nextElementSibling, currDepth = baseDepth;
+			el;
+			el = el.nextElementSibling
+		) {
 			let elDepth = getHeaderDepth(el);
 			if (elDepth.error) {
 				if (highlightNextElements == 2) {
@@ -135,60 +151,89 @@ function processEl({ targetEl, highlightNextElements, setHashMode }) {
 }
 
 if (content != null) {
-	let skipObserver = false, csp = container.scrollTop;
-	let randomEl = document.createElement("br");
-	let ioo = new IntersectionObserver(function (entries) {
-		let sp = csp;
+	let skipObserver = false,
 		csp = container.scrollTop;
-		if (skipObserver) {
-			ioo.unobserve(randomEl);
-			skipObserver = false;
-			return;
-		}
-		for (let entry of entries) {
-			let target = entry.target;
-			if (entry.isIntersecting) {
-				if (csp <= sp) {
-					processEl({ targetEl: target, highlightNextElements: true, setHashMode: setHashMode, });
-					break;
-				}
-			} else if (entry.boundingClientRect.bottom <= container.clientHeight) { // element goes OFF THE TOP OF THE VIEWPORT
-				let el = target.nextElementSibling;
-				if (el) {
-					processEl({ targetEl: el, highlightNextElements: true, setHashMode: setHashMode, });
-				}
-			} else if (target.dataset.observedActive) { // element goes OFF THE BOTTOM OF THE VIEWPORT
-				let el = target.previousElementSibling;
-				if (el) {
-					processEl({ targetEl: el, highlightNextElements: false, setHashMode: setHashMode, });
+	let randomEl = document.createElement("br");
+	let ioo = new IntersectionObserver(
+		function (entries) {
+			let sp = csp;
+			csp = container.scrollTop;
+			if (skipObserver) {
+				ioo.unobserve(randomEl);
+				skipObserver = false;
+				return;
+			}
+			for (let entry of entries) {
+				let target = entry.target;
+				if (entry.isIntersecting) {
+					if (csp <= sp) {
+						processEl({
+							targetEl: target,
+							highlightNextElements: true,
+							setHashMode: setHashMode,
+						});
+						break;
+					}
+				} else if (
+					entry.boundingClientRect.bottom <= container.clientHeight
+				) {
+					// element goes OFF THE TOP OF THE VIEWPORT
+					let el = target.nextElementSibling;
+					if (el) {
+						processEl({
+							targetEl: el,
+							highlightNextElements: true,
+							setHashMode: setHashMode,
+						});
+					}
+				} else if (target.dataset.observedActive) {
+					// element goes OFF THE BOTTOM OF THE VIEWPORT
+					let el = target.previousElementSibling;
+					if (el) {
+						processEl({
+							targetEl: el,
+							highlightNextElements: false,
+							setHashMode: setHashMode,
+						});
+					}
 				}
 			}
-		}
-		return;
-	}, {
-		root: null,
-		threshold: 0,
-	});
+			return;
+		},
+		{
+			root: null,
+			threshold: 0,
+		},
+	);
 
 	for (let el of content.children) {
-		let sidebarElem = sidebar.querySelector(`[data-doc-association="${el.id}"]`);
+		let sidebarElem = sidebar.querySelector(
+			`[data-doc-association="${el.id}"]`,
+		);
 		if (sidebarElem) {
 			elemMap.set(el, sidebarElem);
 		}
 		ioo.observe(el);
 	}
 
-	addEventListener("hashchange", (function hashchange(_event) {
-		if (location.hash.length <= 1) {
+	addEventListener(
+		"hashchange",
+		(function hashchange(_event) {
+			if (location.hash.length <= 1) {
+				return hashchange;
+			}
+			let el = container.querySelector(location.hash);
+			if (!el) {
+				return hashchange;
+			}
+			skipObserver = true;
+			ioo.observe(randomEl);
+			processEl({
+				targetEl: el,
+				highlightNextElements: true,
+				setHashMode: 0,
+			});
 			return hashchange;
-		}
-		let el = container.querySelector(location.hash);
-		if (!el) {
-			return hashchange;
-		}
-		skipObserver = true;
-		ioo.observe(randomEl);
-		processEl({ targetEl: el, highlightNextElements: true, setHashMode: 0, });
-		return hashchange;
-	})());
+		})(),
+	);
 }

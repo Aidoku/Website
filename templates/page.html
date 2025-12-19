@@ -32,7 +32,7 @@
 									{{ page.title }}
 								</a>
 								{% if page.toc %}
-									{% if current_path == page.path %} 
+									{% if current_path == page.path %}
 										<ul class="sidebar-sub-headers">
 											{# only h2 children of the first h1 #}
 											{% for h2 in page.toc[0].children %}

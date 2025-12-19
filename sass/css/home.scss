@@ -1,11 +1,11 @@
-@import 'theme';
+@import "theme";
 
-// Home page
 .home {
 	flex: 1;
 	color: $textColor;
 
-	section, header {
+	section,
+	header {
 		display: flex;
 		justify-content: center;
 		padding: 2rem 5rem 4rem;
@@ -137,7 +137,8 @@ footer {
 
 @media only screen and (max-width: $TabletSize) {
 	.home {
-		header, section {
+		header,
+		section {
 			padding: 2rem 3rem 4rem;
 		}
 
