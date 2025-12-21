@@ -25,7 +25,8 @@
     </head>
 	<body>
 		{% set home = section and section.title == 'index' %}
-		<div class="root{% if home %} no-sidebar{% endif %}">
+		{% set help = current_path is starting_with('/help') %}
+		<div class="root{% if not help %} no-sidebar{% endif %}">
 			{% block nav %}
 				<header class="navbar {% if not home %}border{% endif %}">
 					<div class="left">
@@ -34,14 +35,16 @@
 							<span class="line"></span>
 							<span class="line"></span>
 						</div>
-						<a href="/" class="title"><img class="icon" width="24" height="24" src="/images/aidoku.svg"></a>
+						<a href="/" class="title" aria-label="Home">
+							<img class="icon" width="24" height="24" src="/images/aidoku.svg" alt="Aidoku Logo">
+						</a>
 						{% if not home %}
 						<a href="/" class="title bold mobile">Aidoku</a>
 						{% endif %}
 					</div>
 					<div class="links">
 						<a href="/" class="nav-link {% if home %}active{% endif %}">Home</a>
-						<a href="/help" class="nav-link {% if not home %}active{% endif %}">Help</a>
+						<a href="/help" class="nav-link {% if help %}active{% endif %}">Help</a>
 						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
 					</div>
 				</header>
@@ -52,7 +55,7 @@
 				<aside class="sidebar">
 					<div class="nav-links">
 						<a href="/" class="nav-link {% if home %}active{% endif %}">Home</a>
-						<a href="/help" class="nav-link {% if not home %}active{% endif %}">Help</a>
+						<a href="/help" class="nav-link {% if help %}active{% endif %}">Help</a>
 						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
 					</div>
 					{% block sidebar_content %}
@@ -66,7 +69,7 @@
 						<header class="header">
 							{% block header_content %}
 								<div class="title">
-									<img class="icon" width="91.2" height="91.2" src="/images/aidoku.svg">
+									<img class="icon" width="91.2" height="91.2" src="/images/aidoku.svg" alt="Aidoku Logo">
 									<span>Aidoku</span>
 								</div>
 								<div class="buttons">
@@ -86,7 +89,7 @@
 										<p>Read local files, connect to a Komga server, or browse content from external sources.</p>
 									</div>
 									<div class="image">
-										<img src="/images/library.png" alt="Library" />
+										<img src="/images/library.png" alt="Library View" />
 									</div>
 								</div>
 								<div class="feature">
@@ -95,7 +98,7 @@
 										<p>Fully open source and ad-free, forever. Contribute on GitHub!</p>
 									</div>
 									<div class="image">
-										<img src="/images/source.png" alt="Source" />
+										<img src="/images/source.png" alt="Source View" />
 									</div>
 								</div>
 								<div class="feature">
@@ -104,7 +107,7 @@
 										<p>Customize Aidoku to your liking with global and source-specific settings.</p>
 									</div>
 									<div class="image">
-										<img src="/images/reader.png" alt="Reader" />
+										<img src="/images/reader.png" alt="Reader View" />
 									</div>
 								</div>
 							</div>
@@ -113,10 +116,9 @@
 
 					<footer>
 						{% block footer %}
-							<div class="copyright">© Skitty</div>
+							<div class="copyright">© skitty</div>
 							<div class="detail">
-								Designed and developed by <a href="https://twitter.com/Skittyblock" target="_BLANK">Skitty</a>.<br/>
-								Contribute on <a href="https://github.com/Aidoku/Website" target="_BLANK">GitHub</a>.
+								Designed and developed by <a href="https://skitty.xyz" target="_BLANK">skitty</a>.<br/>
 							</div>
 						{% endblock footer %}
 					</footer>
