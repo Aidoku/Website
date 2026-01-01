@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
@@ -22,7 +22,7 @@
 
 		{% block extra_head %}
 		{% endblock extra_head %}
-    </head>
+	</head>
 	<body>
 		{% set home = section and section.title == 'index' %}
 		{% set help = current_path is starting_with('/help') %}
@@ -36,7 +36,7 @@
 							<span class="line"></span>
 						</div>
 						<a href="/" class="title" aria-label="Home">
-							<img class="icon" width="24" height="24" src="/images/aidoku.svg" alt="Aidoku Logo">
+							<img class="icon" width="24" height="24" src="/images/aidoku.svg" alt="Aidoku Logo" />
 						</a>
 						{% if not home %}
 						<a href="/" class="title bold mobile">Aidoku</a>
@@ -69,8 +69,11 @@
 						<header class="header">
 							{% block header_content %}
 								<div class="title">
-									<img class="icon" width="91.2" height="91.2" src="/images/aidoku.svg" alt="Aidoku Logo">
+									<img class="icon" width="91.2" height="91.2" src="/images/aidoku.svg" alt="Aidoku Logo" />
 									<span>Aidoku</span>
+								</div>
+								<div class="tagline">
+									An open source manga reader for iOS, iPadOS, and macOS.
 								</div>
 								<div class="buttons">
 									<a href="/help/guides/getting-started" class="button bg-white color-tint">Download</a>
@@ -85,8 +88,8 @@
 							<div class="features">
 								<div class="feature">
 									<div class="details">
-										<h2>External Sources</h2>
-										<p>Read local files, connect to a Komga server, or browse content from external sources.</p>
+										<h2>Open Source</h2>
+										<p>Fully open source and ad-free, forever. Contribute on GitHub!</p>
 									</div>
 									<div class="image">
 										<img src="/images/library.png" alt="Library View" />
@@ -94,8 +97,8 @@
 								</div>
 								<div class="feature">
 									<div class="details">
-										<h2>Open Source</h2>
-										<p>Fully open source and ad-free, forever. Contribute on GitHub!</p>
+										<h2>Read from Anywhere</h2>
+										<p>Import local files, connect to a media server, or browse content from external sources.</p>
 									</div>
 									<div class="image">
 										<img src="/images/source.png" alt="Source View" />

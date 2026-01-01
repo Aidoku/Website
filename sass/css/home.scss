@@ -27,7 +27,7 @@
 	header {
 		flex-direction: column;
 		align-items: center;
-		row-gap: 1.8rem;
+		row-gap: 1.4rem;
 		color: $tintColor;
 		background-color: $lightTintColor;
 
@@ -55,6 +55,16 @@
 					font-weight: 550;
 				}
 			}
+		}
+
+		> .tagline {
+			font-size: 1.2em;
+			line-height: 1.4em;
+			max-width: 24rem;
+			text-align: center;
+			margin-top: -1em;
+			opacity: 0.8;
+			font-weight: 450;
 		}
 
 		> .buttons {
