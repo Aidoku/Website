@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://aidoku.app/</loc>
+    </url>
+    <url>
+        <loc>https://aidoku.app/help/</loc>
+    </url>
+    <url>
+        <loc>https://aidoku.app/help/contribution/</loc>
+    </url>
+    <url>
+        <loc>https://aidoku.app/help/faq/</loc>
+    </url>
+    <url>
+        <loc>https://aidoku.app/help/guides/</loc>
+    </url>
+    <url>
+        <loc>https://aidoku.app/help/guides/backups/</loc>
+    </url>
+    <url>
+        <loc>https://aidoku.app/help/guides/getting-started/</loc>
+    </url>
+    <url>
+        <loc>https://aidoku.app/release-notes/</loc>
+    </url>
+    <url>
+        <loc>https://aidoku.app/release-notes/v0.8/</loc>
+    </url>
+</urlset>

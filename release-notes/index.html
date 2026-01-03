@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+		<title>Release Notes | Aidoku</title>
+
+		<meta name="description" content="Free and open source manga reader for iOS">
+		<meta name="keywords" content="iOS app, Manga, Reading, Download, TestFlight, AltStore">
+		<meta name="theme-color" content="#ff375f">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="https://aidoku.app/images/favicon-32x32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://aidoku.app/images/apple-touch-icon.png">
+
+		
+	<link rel="stylesheet" href="https://aidoku.app/css/global.css">
+	<link rel="stylesheet" href="https://aidoku.app/css/page.css">
+	<link rel="stylesheet" href="https://aidoku.app/css/releases.css">
+
+
+		
+		
+	</head>
+	<body>
+		
+		
+		
+		<div class="root no-sidebar">
+			
+				<header class="navbar border">
+					<div class="left">
+						<div class="hamburger mobile" onclick="toggleSidebar()">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</div>
+						<a href="/" class="title" aria-label="Home">
+							<img class="icon" width="24" height="24" src="/images/aidoku.svg" alt="Aidoku Logo" />
+						</a>
+						
+						<a href="/" class="title bold mobile">Aidoku</a>
+						
+					</div>
+					<div class="links">
+						<a href="/" class="nav-link ">Home</a>
+						<a href="/help" class="nav-link ">Help</a>
+						<a href="/release-notes" class="nav-link active">Releases</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+				</header>
+			
+
+			
+				<div class="sidebar-mask" onclick="toggleSidebar()"></div>
+				<aside class="sidebar">
+					<div class="nav-links">
+						<a href="/" class="nav-link ">Home</a>
+						<a href="/help" class="nav-link ">Help</a>
+						<a href="/release-notes" class="nav-link active">Releases</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+					
+					
+				</aside>
+			
+
+			
+<main>
+	<div class="doc">
+		<h1 id="release-notes">Release Notes</h1>
+<p>Changelogs of Aidoku releases. Downloads, such as ipa files, can be found on <a rel="noopener" target="_blank" href="https://github.com/Aidoku/Aidoku/releases">GitHub</a>.</p>
+
+
+		
+		
+			
+	<section class="release">
+		<h2>
+			<a href="/release-notes/v0.8">v0.8</a>
+			
+				<span class="badge">Latest</span>
+			
+		</h2>
+		<time datetime="2026-01-03T16:07:38Z">
+			January  3, 2026
+		</time>
+		
+		
+		
+			
+			
+			
+			
+				<h3>Main Changes</h3>
+				<ul>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										New icon
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Updated for liquid glass, and now uses a more correct Japanese-style font.</p>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Fluid transitions
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Aidoku now fits in with more iOS 26 apps, letting you swipe to close the reader and other views.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/7f3c44f9e2cbbbf68b91461535c2f3f0d2414081" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Insights
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Starting from this update, reading time is now tracked, and you can see all your statistics in the insights page on the settings tab.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/e3c4fcffed329bdb784e316319746ef6b82832f6" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Library improvements
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>List mode, additional filter options, persistent filters, and improved multi-select.</p>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Auto reader background color option
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Determine the reader background based on page color.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/1602463fb8d6e5efd17c15433b6a3366f0ac80b2" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Live Text support
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Copy text and use Apple&#x27;s built in image text translation feature by pressing the live text icon in the bottom right corner of page images.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/34a4f09a1f4acd4a782ccaeeef1e36f1a16b526f" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Incognito Mode indicator
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>A noticeable banner at the top now reminds you that reading history won&#x27;t be tracked.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/bac35a4dd7d4c006eb2871cd3291763905be8948" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				</ul>
+			
+		
+			
+			
+			
+			
+				<h3>Other Features</h3>
+				<ul>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Keyboard dismiss on scroll
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>For example, scrolling on a source search results page will now automatically dismiss the keyboard. This behavior is more in line with other Apple apps.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/4b05b07d7348cd78114d350416b8ec2d50bbe107" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Liquid glass reader slider
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>The reader page slider knob was updated to match system sliders on iOS 26. It is now slightly larger and wider, and expands into a glass view when dragging.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/57d266e2ca9b78bc5ff4f0211af1623c8d1442b1" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Multi-select support in Browse tab
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Library multi-select activation via gesture
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Drag with two fingers to activate selection, just like on table views.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/2d7bb0727e7ddf563e77157f8ce52e5a9d1489c4" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Failed page tracker update retrying
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>If an update to a page tracker (e.g. Komga or Kavita) fails at some point, it will be retried during the next library refresh.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/315b4cd94cf106a40194f7a57c29a99219e311e9" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Togglable parallel downloads setting
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Some sources may have more aggressive rate limits that result in problems when using parallelized downloads. In that case, this setting can now be turned off.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/8b7e34c4739e6528b9e6f40cd54ab323d9dd781b" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								LocalStorage key extraction support in source web login
+								
+									(<a href="https://github.com/remytomme" target="_blank">@remytomme</a>)
+								
+							
+						</li>
+					
+				</ul>
+			
+		
+			
+			
+			
+			
+				<h3>Other Fixes</h3>
+				<ul>
+					
+				 		<li>
+							
+								Komga PDF pages not loading
+								
+									(<a href="https://github.com/dyphire" target="_blank">@dyphire</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Disabled library update parallelization
+										
+											(<a href="https://github.com/nicolasvergoz" target="_blank">@nicolasvergoz</a>)
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Parallelized requests were causing issues with some sources, particularly when the source server wasn&#x27;t responding. This feature will now be disabled until more steps have been taken to address the root cause of the issue.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/59eb3e563b9347527a88b870e42ea480b55a8279" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Downloaded chapter info not working with external programs
+										
+											(<a href="https://github.com/NightQuest" target="_blank">@NightQuest</a>)
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Quotes and apostrophes are now escaped in ComicInfo.xml files, and downloads are compressed with files in the root rather than a directory.</p>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Upscaler not working on downloads
+								
+									(<a href="https://github.com/686udjie" target="_blank">@686udjie</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Improved library cover image loading
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>If images are already cached when opening the app, the app doesn&#x27;t need to wait until sources are initialized before loading them.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/912317c139c757cdad9feee52d72f1044079bcb6" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Alert message boxes not showing on iOS 15
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Downloads from sources with page processors not working
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Downloads sometimes not being removed after reading
+								
+							
+						</li>
+					
+				</ul>
+			
+		
+	
+		<a
+			href="https://github.com/Aidoku/Aidoku/releases/tag/v0.8"
+			target="_blank"
+			rel="noopener"
+		>
+			GitHub Release
+		</a>
+	</section>
+
+		
+	</div>
+</main>
+
+		</div>
+
+		
+			<script charset="utf-8" src="https://aidoku.app/js/sidebar.js"></script>
+		
+	</body>
+</html>

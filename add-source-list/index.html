@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+		<title>Aidoku | Add Source List</title>
+
+		<meta name="description" content="Free and open source manga reader for iOS">
+		<meta name="keywords" content="iOS app, Manga, Reading, Download, TestFlight, AltStore">
+		<meta name="theme-color" content="#ff375f">
+
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/page.css"">
+	</head>
+	<body>
+
+		<div class="root no-sidebar">
+			<header class="navbar border">
+				<div class="left">
+					<a href="/" class="title">読</a>
+					<a href="/" class="title bold mobile">Aidoku</a>
+				</div>
+				<div class="links">
+					<a href="/" class="nav-link">Home</a>
+					<a href="/help" class="nav-link">Help</a>
+					<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+				</div>
+			</header>
+
+			<main class="page">
+				<div class="doc">
+					<p>Redirecting to Aidoku...</p>
+				</div>
+			</main>
+		</div>
+
+		<script>
+			let url = new URLSearchParams(window.location.search).get("url");
+			if (url) {
+				window.location = `aidoku://addSourceList?url=${url}`;
+			}
+		</script>
+	</body>
+</html>

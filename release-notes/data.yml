@@ -1,0 +1,66 @@
+versions:
+  - version: "0.8"
+    date: 2026-01-03T16:07:38Z
+    main_changes:
+      - label: New icon
+        description: Updated for liquid glass, and now uses a more correct Japanese-style font.
+      - label: Fluid transitions
+        description: Aidoku now fits in with more iOS 26 apps, letting you swipe to close the reader and other views.
+        commit: 7f3c44f9e2cbbbf68b91461535c2f3f0d2414081
+      - label: Insights
+        description: Starting from this update, reading time is now tracked, and you can see all your statistics in the insights page on the settings tab.
+        commit: e3c4fcffed329bdb784e316319746ef6b82832f6
+      - label: Library improvements
+        description: List mode, additional filter options, persistent filters, and improved multi-select.
+      - label: Auto reader background color option
+        description: Determine the reader background based on page color.
+        commit: 1602463fb8d6e5efd17c15433b6a3366f0ac80b2
+      - label: Live Text support
+        description: "Copy text and use Apple's built in image text translation feature by pressing the live text icon in the bottom right corner of page images."
+        commit: 34a4f09a1f4acd4a782ccaeeef1e36f1a16b526f
+      - label: Incognito Mode indicator
+        description: "A noticeable banner at the top now reminds you that reading history won't be tracked."
+        commit: bac35a4dd7d4c006eb2871cd3291763905be8948
+    other_features:
+      - label: Keyboard dismiss on scroll
+        description: For example, scrolling on a source search results page will now automatically dismiss the keyboard. This behavior is more in line with other Apple apps.
+        commit: 4b05b07d7348cd78114d350416b8ec2d50bbe107
+      - label: Liquid glass reader slider
+        description: The reader page slider knob was updated to match system sliders on iOS 26. It is now slightly larger and wider, and expands into a glass view when dragging.
+        commit: 57d266e2ca9b78bc5ff4f0211af1623c8d1442b1
+      - label: Multi-select support in Browse tab
+        commit: 4bde7d2dfaabe5f55598b12d2148e2f7198103c6
+      - label: Library multi-select activation via gesture
+        description: Drag with two fingers to activate selection, just like on table views.
+        commit: 2d7bb0727e7ddf563e77157f8ce52e5a9d1489c4
+      - label: Failed page tracker update retrying
+        description: If an update to a page tracker (e.g. Komga or Kavita) fails at some point, it will be retried during the next library refresh.
+        commit: 315b4cd94cf106a40194f7a57c29a99219e311e9
+      - label: Togglable parallel downloads setting
+        description: Some sources may have more aggressive rate limits that result in problems when using parallelized downloads. In that case, this setting can now be turned off.
+        commit: 8b7e34c4739e6528b9e6f40cd54ab323d9dd781b
+      - label: LocalStorage key extraction support in source web login
+        commit: 200ccdf64b2e11aa1fe866a5a486483f5c34dd1e
+        contributor: remytomme
+    other_fixes:
+      - label: Komga PDF pages not loading
+        contributor: dyphire
+      - label: Disabled library update parallelization
+        description: "Parallelized requests were causing issues with some sources, particularly when the source server wasn't responding. This feature will now be disabled until more steps have been taken to address the root cause of the issue."
+        commit: 59eb3e563b9347527a88b870e42ea480b55a8279
+        contributor: nicolasvergoz
+      - label: Downloaded chapter info not working with external programs
+        description: Quotes and apostrophes are now escaped in ComicInfo.xml files, and downloads are compressed with files in the root rather than a directory.
+        contributor: NightQuest
+      - label: Upscaler not working on downloads
+        commit: 60570fc804bc95cbc70845c327cd3f3c06c1de11
+        contributor: 686udjie
+      - label: Improved library cover image loading
+        description: "If images are already cached when opening the app, the app doesn't need to wait until sources are initialized before loading them."
+        commit: 912317c139c757cdad9feee52d72f1044079bcb6
+      - label: Alert message boxes not showing on iOS 15
+        commit: 912317c139c757cdad9feee52d72f1044079bcb6
+      - label: Downloads from sources with page processors not working
+        commit: 34e700526becee2af8bdf82b5cc379499349c45d
+      - label: Downloads sometimes not being removed after reading
+        commit: 003135f2a24c57303c7765592840c5175b273bc9
