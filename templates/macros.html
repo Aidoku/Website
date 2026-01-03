@@ -1,0 +1,63 @@
+{# release(version="0.8", latest=true) #}
+
+{% macro release(release, latest=false) %}
+	<section class="release">
+		<h2>
+			<a href="/release-notes/v{{ release.version }}">v{{ release.version }}</a>
+			{% if latest %}
+				<span class="badge">Latest</span>
+			{% endif %}
+		</h2>
+		<time datetime="{{ release.date }}">
+			{{ release.date | date(format="%B %e, %Y") }}
+		</time>
+		{% set section_keys = ["main_changes", "other_features", "other_fixes"] %}
+		{% set section_titles = ["Main Changes", "Other Features", "Other Fixes"] %}
+		{% for idx in range(end=section_keys | length) %}
+			{% set section_key = section_keys[idx] %}
+			{% set section_title = section_titles[idx] %}
+			{% set change_list = release[section_key] %}
+			{% if change_list and change_list | length > 0 %}
+				<h3>{{ section_title }}</h3>
+				<ul>
+					{% for change in change_list %}
+				 		<li>
+							{% if change.description %}
+								<details>
+									<summary>
+										{{ change.label }}
+										{% if change.contributor %}
+											(<a href="https://github.com/{{ change.contributor }}" target="_blank">@{{ change.contributor }}</a>)
+										{% endif %}
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>{{ change.description }}</p>
+									{% if change.commit %}
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/{{ change.commit }}" target="_blank">
+												Commit
+											</a>
+										</small>
+									{% endif %}
+								</details>
+							{% else %}
+								{{ change.label }}
+								{% if change.contributor %}
+									(<a href="https://github.com/{{ change.contributor }}" target="_blank">@{{ change.contributor }}</a>)
+								{% endif %}
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		{% endfor %}
+	
+		<a
+			href="https://github.com/Aidoku/Aidoku/releases/tag/v{{ release.version }}"
+			target="_blank"
+			rel="noopener"
+		>
+			GitHub Release
+		</a>
+	</section>
+{% endmacro release %}

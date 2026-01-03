@@ -26,6 +26,7 @@
 	<body>
 		{% set home = section and section.title == 'index' %}
 		{% set help = current_path is starting_with('/help') %}
+		{% set notes = current_path is starting_with('/release-notes') %}
 		<div class="root{% if not help %} no-sidebar{% endif %}">
 			{% block nav %}
 				<header class="navbar {% if not home %}border{% endif %}">
@@ -45,6 +46,7 @@
 					<div class="links">
 						<a href="/" class="nav-link {% if home %}active{% endif %}">Home</a>
 						<a href="/help" class="nav-link {% if help %}active{% endif %}">Help</a>
+						<a href="/release-notes" class="nav-link {% if notes %}active{% endif %}">Releases</a>
 						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
 					</div>
 				</header>
@@ -56,6 +58,7 @@
 					<div class="nav-links">
 						<a href="/" class="nav-link {% if home %}active{% endif %}">Home</a>
 						<a href="/help" class="nav-link {% if help %}active{% endif %}">Help</a>
+						<a href="/release-notes" class="nav-link {% if notes %}active{% endif %}">Releases</a>
 						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
 					</div>
 					{% block sidebar_content %}

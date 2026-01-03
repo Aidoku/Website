@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
+
+{% block css %}
+	<link rel="stylesheet" href="{{ get_url(path="css/global.css") | safe }}">
+	<link rel="stylesheet" href="{{ get_url(path="css/page.css") | safe }}">
+	<link rel="stylesheet" href="{{ get_url(path="css/releases.css") | safe }}">
+{% endblock css %}
+
+{% block content %}
+<main>
+	<div class="doc">
+		<h1>Release Notes</h1>
+		<p>
+			You are viewing a single release. <a href="/release-notes">See all releases</a>
+		</p>
+
+		{% set releases = load_data(path="content/release-notes/data.yml") %}
+		{% for potential_release in releases.versions %}
+			{% if potential_release.version == page.extra.version %}
+				{% set_global release = potential_release %}
+				{% set_global latest = loop.first %}
+				{% break %}
+			{% endif %}
+		{% endfor %}
+		{% if release %}
+			{{ macros::release(release=release, latest=latest) }}
+		{% endif %}
+	</div>
+</main>
+{% endblock content %}
