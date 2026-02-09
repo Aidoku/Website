@@ -1,4 +1,42 @@
 versions:
+  - version: "0.8.1"
+    date: 2026-02-09T15:18:25Z
+    main_changes:
+      - label: Pinned sources should stay pinned
+        commit: ddbbfe182ba3cef3c6d117e669c5b8e6bd9e778f
+      - label: Error when restoring chapters from backup resolved
+        commit: e0edfa7ec463518af40277e0c8d6479ee7faeb89
+      - label: Insights page more accurately determines chapter read count
+        commit: 189f388f7055973b4089bd7a0fe5ffe5483d769a
+      - label: Kavita source login issues resolved
+        commit: 81f267110d99f739ecefdf8c5a2b3a7f0cf8e84a
+    other_features:
+    other_fixes:
+      - label: Freeze/crash when closing reader in some situations
+        commit: ebe7786783de2a6db7581fbc0524a342f5683425
+      - label: Page tracker updates getting dropped due to hanging network requests
+        commit: 5aced9f00b1698c489e1337e837a1d5d7d4be52f
+      - label: Shikimori tracker login not working
+        commit: 3b2c067714d5a642fe26f9fd5648963504a1ee4c
+      - label: Image quick actions conflicting with live text highlighting
+        commit: b50f05ac22340a27fcf6d2329a4bea5cf11560f8
+      - label: Source list languages not populating in filter
+        commit: bb472704ea4ef37d2af91588f1bf0bc39b7349f1
+      - label: Source update cells incorrectly being interactable in Browse tab
+        commit: f0f87034ab15508733e0c6ca3a721440e067da8c
+      - label: Series not being unpinned after reading all chapters
+        commit: d9af1cce64a4f3c1e9f96cadbe4ae74d91b3408f
+      - label: Source settings not being cleared after removing a source
+        commit: fdad605deab1770f57a3a69b5219378bed90c68f
+      - label: '"Skip titles" setting not restoring from backup'
+        commit: 460fd352a760889debb9e838e5f57fdec0f1a1a7
+      - label: Automatic library refresh failing when sources aren't fully loaded
+        commit: 7cd0f3d0b676f6d0cae04b3fcc68317f499638a5
+      - label: Komga tracker not setting read chapters after registering
+        commit: 93e667bb7d8b0eb4108e3c1b16ffe6e9173a2e30
+      - label: Source filters header becoming uninteractable sometimes
+        commit: 6006e5f91bfc357a66457cef2fe5bf7578ceccfc
+
   - version: "0.8"
     date: 2026-01-03T16:07:38Z
     main_changes:
