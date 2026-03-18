@@ -1,4 +1,90 @@
 versions:
+  - version: "0.8.2"
+    date: 2026-03-18T13:47:13Z
+    main_changes:
+      - label: Filter groups
+        description: Save library filter configurations to categories library items.
+        commit: 43600e802ee575784b3a2dd4448e7af2271966d1
+      - label: Saved source searches
+        description: Save and load search text and filter configurations in sources.
+        commit: 72fad9fa00345ee2a7a7df05707c57df26099cfb
+      - label: MangaBaka tracker
+        description: Log in and track items with mangabaka.org.
+        commit: 55e4f59c3cc8b4284af5b0a10d4dd28a04f9f8c0
+      - label: Improved text reader (experimental)
+        description: Now with a paged reading style and font configuration for text-only chapters.
+        commit: ad3595f5476a28ac5632ba551c73378c2f22d7a1
+        contributor: rbertus2000
+    other_features:
+      - label: Hide bars on swipe setting
+        description: Automatically dismiss bars in the reader after swiping to the next page.
+        commit: 38d0d215bfc0ebe9d548a4657b1472fc1d5078f9
+      - label: Category filter for library
+        commit: 69853bb53e531743bcf2946e6d34a3e9dd9caf91
+      - label: Uncategorized library category option
+        description: Easily find series in your library that haven't been added to a category.
+        commit: 1f8ac072716b642f3c5e98eedf33d010d649a0ca
+      - label: Komga and Kavita mirrors setting
+        description: Configure multiple base URLs your server can be accessed from.
+        commit: 42828e1961cb8233ad991681e91541fa24fe4504
+      - label: Scanlator affinity
+        description: Prefers next chapters from the scanlator you're already reading.
+        commit: 2b40bff32322a7cbad380888f809d2ff9f5db1a4
+        contributor: kunihir0
+      - label: Missing source list indicator
+        description: Displays a warning if a source was removed from a source list and will no longer receive updates.
+        commit: 79056db24afdcaf0b946166380a75b5b3501ac06
+      - label: Import backups from files in-app
+        commit: d147d96d4ea66c693acb8083f23e7b067bc09a7d
+      - label: Prompt history sync when newer chapters are detected on tracker
+        commit: c7fbe45408d84a555baccb4a23e8e313b0cc54e0
+      - label: Source tag/genre filter searching
+        commit: f3cda93eb053f8ed26b42c22d6e0e2445f088599
+      - label: Disable Komga/Kavita tracker option
+        commit: ea182dd3bcb2834eb16732959bf515ebb86de8e6
+      - label: Rename Komga/Kavita source option
+        commit: 1a99f3d97e3de4d308a7879648b4ab70cc2ccba4
+      - label: AVIF file support for downloads and local files
+        commit: ef71bbb4285390fedd9d6aaed46ebe58b9d2e795
+        contributor: dyphire
+      - label: Support for opening reader with deep links
+        commit: 679109601d48fcd3f4dbd3773c6490f33a7b0ed7
+      - label: Tracker relogin option
+        description: Fix tracker issues without unlinking your existing trackers.
+        commit: 6620825def68087976d65b71d547de0fcc4e4de7
+      - label: Display unavailable linked trackers
+        description: Previously linked trackers that became unavailable (e.g. from removing or migrating Komga/Kavita) will now show and allow removal.
+        commit: 859670f4d5edba9cd259732324d70ba6d698b536
+    other_fixes:
+      - label: Tags for some Komga series not showing
+        commit: 205e446df71930b99cc829e4f222b3e15db02fae
+        contributor: dyphire
+      - label: Refreshed series incorrectly pinned even with no new chapters
+        commit: 3bd7e15a8bc71200751c4b6a0f3266697ef2349b
+      - label: Treat unlocked chapters as updates
+        commit: be8a833572fb4076afe10bfc3412d098165e4be7
+      - label: Crash when source provides non-unique entries
+        commit: d10de103655ae8a1583f9579973c63a98ed0c183
+      - label: Better chapter data update in library refreshes
+        commit: 7db604aa0ad15f4fb64154dbbdbd77cd53a27e08
+      - label: Remove invalid tracker items when migrating
+        commit: aec14160067d0784672e6dd141a5046d21c2c0d6
+      - label: Remove Komga/Kavita trackers after removing the source
+        commit: 7370d6ad17a78b982a83ea2e34b52150d3af5b30
+      - label: Reading mode setting conflicting with multiple sources
+        description: Previously configured reading modes will need to be reconfigured due to this change.
+        commit: 5ff0f9f0a25bfa5d5ff764a8b9ff3ecd51570594
+      - label: Crash related to iCloud sync
+        commit: ce4fd351b3a44a44e3b5f9d74809ecdff21f823f
+      - label: Freeze after reading with large libraries
+        commit: b4642d8b3bae521b4f0cc8b11e796d27c7986d70
+      - label: Custom cover incorrectly removed after manual refresh
+        commit: 89c7221e41f4522bcdbce583cb7d7bf2e7b872a8
+      - label: Freeze/crash when entering series page while downloading
+        commit: 8a2e73e465174aaa00747443937e8764694d41f0
+      - label: Background tasks sometimes not executing
+        commit: b21341c274d41728c686aa91f6ca93ec2811f5fb
+
   - version: "0.8.1"
     date: 2026-02-09T15:18:25Z
     main_changes:
