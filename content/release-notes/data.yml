@@ -1,4 +1,77 @@
 versions:
+  - version: "0.8.3"
+    date: 2026-05-18T19:02:38Z
+    main_changes:
+      - label: New migration flow
+        description: View series details and optionally copy data instead of completely migrating.
+        commit: cd04227c16f517db853b1a16543b2a966613331e
+      - label: Kavita API key login
+        commit: 4fc014ec2e1181a0385b4bda9cee26fe9742eb28
+      - label: Continuous with gaps reading mode
+        description: Like the webtoon mode, but with gaps between pages.
+        commit: b7f79d2b4ebc5c38930483d18b672d795007ca8e
+      - label: Fixed tracker search bar not showing
+        commit: 7e2d6a0be591f910e8b8bf0d71e191ee9cb22941
+      - label: Page offset setting and double page improvements
+        commit: 4c869f15ee2ba2a7acbbf87b90219930f267e7a5
+        contributor: chibijoam
+    other_features:
+      - label: Resume last opened chapter setting
+        description: Option to always select the most recently opened chapter rather than the next chapter in the list for the continue reading button.
+        commit: 9f4adb3509eeead66228690ea06dfc9f529ca56e
+        contributor: phonixdrive
+      - label: Display Kavita chapter titles
+        commit: 48f0405890980b26d8da36ae5e996b63570dd92b
+      - label: Include built-in sources in backups
+        commit: a95ef334068a0baa09384d82b1dee43911e3c500
+      - label: Apple pencil squeeze actions
+        description: Single squeeze to move to the next page, double squeeze for previous, and long squeeze for chapter selector.
+        commit: 015250a6361619b8cf1261e52bf8349582de9d05
+      - label: Disable double tap zoom option
+        description: Makes tap zone presses activate faster if enabled.
+        commit: fa4867775159c364ee91f7d59912690d2908e12f
+      - label: Simplified layout setting
+        description: Turns the "manga per row" settings into standard, compact, and custom options.
+        commit: fceec78ac74c3ec36dcbf9fb1a9b54df743dd6a4
+      - label: Confirmation when removing tracked item from library
+        commit: 883d4a68f63ab2a48802b32befa5d7843114f746
+      - label: Don't save source filter changes when in Incognito Mode
+        commit: c2d16b15a543f166c12ab2bf0d23c9e118a3b928
+      - label: Various improvements to menus
+        description: Updated icons and ordering to match system apps, use large buttons for downloading and sharing chapters.
+        commit: 5f90e3d8c6c33ae674a69c176b702a170e20ce48
+      - label: Refresh series details menu option
+        description: Alternative to pulling to refresh inside a series details page.
+        commit: 679fe272ac3d5a95c343c96d6262d55237963687
+      - label: View on website option in tracker search
+        commit: a9a582b9d7d628f035d9d23a4a1424bf339621f7
+      - label: Tracker chapter number offset option
+        description: Set an offset number to apply to whatever chapter number you read and gets sent to the tracker when updating automatically.
+        commit: a46547a973aff5eb886de08fcef40e3daac73581
+        contributor: bcmeireles
+    other_fixes:
+      - label: Relative paths in Kavita base URL not working
+        commit: 6b37b2a99a4caf1c18a29fc386635d3b9a9d0b38
+      - label: Incorrect Kavita and Komga source keys
+        description: Could've caused issues when restoring data from backups.
+        commit: bc568e19735db3719ce4ecbef39a5580b9c91f53
+      - label: Read button not working after filtering chapters
+        commit: 84b33118310857084849713f51e3e28d57874bc3
+      - label: Chapter scanlator filter sometimes clearing in library refreshes
+        commit: 92a36281996f085bc79551306091a632da39b465
+      - label: Some settings not working on iOS 18
+        commit: 1a837a35a5a07b5fd1e1cd1bc23e9c0942f7794b
+      - label: Various text reader issues
+        commit: fa99b0a1caddd2886afa164eb227aa08f07d1025
+        contributor: rbertus2000
+      - label: Shikimori tracker not working
+        description: Updated domain to one with less region locking.
+        commit: d9c56322017e61b9842e4d7f1a0731b1e74c1b08
+      - label: Add to category prompt sometimes not showing
+        commit: 0fc3229c40d24f82d46d299e665eb38c47b3267d
+      - label: Library/category re-locking when scrolling upwards
+        commit: 29a1086a875ff3992ace5602f2262025f1ca610c
+
   - version: "0.8.2"
     date: 2026-03-18T13:47:13Z
     main_changes:
