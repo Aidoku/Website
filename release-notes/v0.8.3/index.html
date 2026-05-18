@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+		<title>v0.8.3 | Aidoku</title>
+
+		<meta name="description" content="Free and open source manga reader for iOS">
+		<meta name="keywords" content="iOS app, Manga, Reading, Download, TestFlight, AltStore">
+		<meta name="theme-color" content="#ff375f">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="https://aidoku.app/images/favicon-32x32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://aidoku.app/images/apple-touch-icon.png">
+
+		
+	<link rel="stylesheet" href="https://aidoku.app/css/global.css">
+	<link rel="stylesheet" href="https://aidoku.app/css/page.css">
+	<link rel="stylesheet" href="https://aidoku.app/css/releases.css">
+
+
+		
+		
+	</head>
+	<body>
+		
+		
+		
+		<div class="root no-sidebar">
+			
+				<header class="navbar border">
+					<div class="left">
+						<div class="hamburger mobile" onclick="toggleSidebar()">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</div>
+						<a href="/" class="title" aria-label="Home">
+							<img class="icon" width="24" height="24" src="/images/aidoku.svg" alt="Aidoku Logo" />
+						</a>
+						
+						<a href="/" class="title bold mobile">Aidoku</a>
+						
+					</div>
+					<div class="links">
+						<a href="/" class="nav-link ">Home</a>
+						<a href="/help" class="nav-link ">Help</a>
+						<a href="/release-notes" class="nav-link active">Releases</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+				</header>
+			
+
+			
+				<div class="sidebar-mask" onclick="toggleSidebar()"></div>
+				<aside class="sidebar">
+					<div class="nav-links">
+						<a href="/" class="nav-link ">Home</a>
+						<a href="/help" class="nav-link ">Help</a>
+						<a href="/release-notes" class="nav-link active">Releases</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+					
+					
+				</aside>
+			
+
+			
+<main>
+	<div class="doc">
+		<h1>Release Notes</h1>
+		<p>
+			You are viewing a single release. <a href="/release-notes">See all releases</a>
+		</p>
+
+		
+		
+			
+				
+				
+				
+		
+			
+	<section class="release">
+		<h2>
+			<a href="/release-notes/v0.8.3">v0.8.3</a>
+			
+				<span class="badge">Latest</span>
+			
+		</h2>
+		<time datetime="2026-05-18T19:02:38Z">
+			May 18, 2026
+		</time>
+		
+		
+		
+			
+			
+			
+			
+				<h3>Main Changes</h3>
+				<ul>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										New migration flow
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>View series details and optionally copy data instead of completely migrating.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/cd04227c16f517db853b1a16543b2a966613331e" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Kavita API key login
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Continuous with gaps reading mode
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Like the webtoon mode, but with gaps between pages.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/b7f79d2b4ebc5c38930483d18b672d795007ca8e" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Fixed tracker search bar not showing
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Page offset setting and double page improvements
+								
+									(<a href="https://github.com/chibijoam" target="_blank">@chibijoam</a>)
+								
+							
+						</li>
+					
+				</ul>
+			
+		
+			
+			
+			
+			
+				<h3>Other Features</h3>
+				<ul>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Resume last opened chapter setting
+										
+											(<a href="https://github.com/phonixdrive" target="_blank">@phonixdrive</a>)
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Option to always select the most recently opened chapter rather than the next chapter in the list for the continue reading button.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/9f4adb3509eeead66228690ea06dfc9f529ca56e" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Display Kavita chapter titles
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Include built-in sources in backups
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Apple pencil squeeze actions
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Single squeeze to move to the next page, double squeeze for previous, and long squeeze for chapter selector.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/015250a6361619b8cf1261e52bf8349582de9d05" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Disable double tap zoom option
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Makes tap zone presses activate faster if enabled.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/fa4867775159c364ee91f7d59912690d2908e12f" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Simplified layout setting
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Turns the &quot;manga per row&quot; settings into standard, compact, and custom options.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/fceec78ac74c3ec36dcbf9fb1a9b54df743dd6a4" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Confirmation when removing tracked item from library
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Don&#x27;t save source filter changes when in Incognito Mode
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Various improvements to menus
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Updated icons and ordering to match system apps, use large buttons for downloading and sharing chapters.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/5f90e3d8c6c33ae674a69c176b702a170e20ce48" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Refresh series details menu option
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Alternative to pulling to refresh inside a series details page.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/679fe272ac3d5a95c343c96d6262d55237963687" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								View on website option in tracker search
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Tracker chapter number offset option
+										
+											(<a href="https://github.com/bcmeireles" target="_blank">@bcmeireles</a>)
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Set an offset number to apply to whatever chapter number you read and gets sent to the tracker when updating automatically.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/a46547a973aff5eb886de08fcef40e3daac73581" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				</ul>
+			
+		
+			
+			
+			
+			
+				<h3>Other Fixes</h3>
+				<ul>
+					
+				 		<li>
+							
+								Relative paths in Kavita base URL not working
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Incorrect Kavita and Komga source keys
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Could&#x27;ve caused issues when restoring data from backups.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/bc568e19735db3719ce4ecbef39a5580b9c91f53" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Read button not working after filtering chapters
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Chapter scanlator filter sometimes clearing in library refreshes
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Some settings not working on iOS 18
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Various text reader issues
+								
+									(<a href="https://github.com/rbertus2000" target="_blank">@rbertus2000</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Shikimori tracker not working
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Updated domain to one with less region locking.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/d9c56322017e61b9842e4d7f1a0731b1e74c1b08" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Add to category prompt sometimes not showing
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Library&#x2F;category re-locking when scrolling upwards
+								
+							
+						</li>
+					
+				</ul>
+			
+		
+	
+		<a
+			href="https://github.com/Aidoku/Aidoku/releases/tag/v0.8.3"
+			target="_blank"
+			rel="noopener"
+		>
+			GitHub Release
+		</a>
+	</section>
+
+		
+	</div>
+</main>
+
+		</div>
+
+		
+			<script charset="utf-8" src="https://aidoku.app/js/sidebar.js"></script>
+		
+	</body>
+</html>
