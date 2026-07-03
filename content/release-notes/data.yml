@@ -1,4 +1,53 @@
 versions:
+  - version: "0.8.4"
+    date: 2026-07-03T05:27:41Z
+    main_changes:
+      - label: Fixes for iOS 27
+        description: Fixed settings pages freezing the app, along with other minor visual issues.
+      - label: Improved backup restore time
+        description: Restores should now take seconds instead of minutes.
+        commit: db47ba8a4f8c7534d3aaf6e7ec0373b61dff6fef
+        contributor: Amqx
+      - label: Failed download page retrying
+        description: Less chance of missing pages in downloaded chapters from sources with aggressive rate limits.
+        commit: 7dbe4805ae184d2a2e575ae1d53d5b130b64907f
+        contributor: pxseu
+      - label: New chapter notifications (experimental)
+        description: When Aidoku refreshes in the background, notification(s) of new chapters should be sent if enabled.
+        commit: e131a7a5520c0bc2a3a0f903409800afea58e9f4
+        contributor: Zareix
+    other_features:
+      - label: Show days of week in the insights heatmap
+        commit: e80d36391862b88cc4c7f62d5d27af9a4d75744b
+      - label: Async JS execution source APIs
+        commit: 540bbfde4aeb9f782a476158205c14284dd0ff9e
+    other_fixes:
+      - label: Improved CloudFlare handling
+        description: Fixes some sources with higher level CloudFlare protection sometimes being blocked.
+        commit: f27880d0e11fc7fb94b60817e13b57c7a8e83e66
+      - label: Incorrect alert showing when adding to library with trackers
+        commit: a7b8ff86f4554233464eb5ef402b19a9004510a3
+      - label: Crash with invalid image dimensions
+        commit: d81373a3381457fd06fe89fed084248bcccd7aca
+      - label: Source home page invalid scroll offset
+        commit: 39dde73d1d5c96bf7565cf38e0155b74eeb09cc6
+      - label: Some trackers not transferred when migrating
+        commit: 20c070bf142ee8219caa4fa0d08e6f5ebdbae5b4
+      - label: Reading mode setting not migrating
+        commit: ed87600f2d905f3745235d1a7dcb8b4b945689a6
+      - label: Bookmark icon on series covers not properly updating
+        commit: 6b014496377854324cf663dc4ee3591e4f8e68c0
+      - label: Some library series covers not updating when moved
+        commit: e1e67f1c519962afdcc4cf8f1a5f82454f101be5
+        contributor: neldra
+      - label: Launching via PlayCover not working
+        commit: 52482d0545f80467260c2c1f04e572c54539cf39
+        contributor: nidghogg
+      - label: Inconsistent history swipe to delete action style
+        commit: 4b98fb9b2b5659a569c25b6d7bc647246a7504e2
+      - label: Some downloaded pages not being readable due to image extension
+        commit: d5c87b47e0df8bb8b3a31ce43573e655b88833ef
+
   - version: "0.8.3"
     date: 2026-05-18T19:02:38Z
     main_changes:
