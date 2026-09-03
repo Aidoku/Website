@@ -1,4 +1,116 @@
 versions:
+  - version: "0.9"
+    date: 2026-09-03T20:17:08Z
+    main_changes:
+      - label: OCR dictionary support (iOS 18+)
+        description: Import Yomitan-compatible dictionaries in the app and look up words while reading.
+        commit: 31dbf32ca9be6bbb80b5ab33b277003098742a76
+        contributor: GameFuzzy
+      - label: Suwayomi built-in source
+        description: Read and track from a Suwayomi instance, just like Komga and Kavita.
+        commit: 97e5073722b1a7c0ff69a7e17ded9d3f53cc02ac
+      - label: Auto scroll for webtoon reader
+        description: Enable and press the play button to scroll without touching your device
+        commit: eb812a56593631c03997de6b5d343b2dbd3bea62
+      - label: Fixed CloudFlare handling
+        description: CloudFlare issues that caused external sources to break should be resolved.
+        commit: 56455db7a215d359092c99617b1e126ceed7e5d2
+      - label: Disable sources option
+        description: Temporarily disable sources without uninstalling them, e.g. if they are broken but could be fixed by an update.
+        commit: 0ec3eab03e0b0587a966385ab0ea8e96e7f8f515
+      - label: Improved library loading speed
+        commit: e21de3b3e0ae31e0cb03063101730936653c57be
+        contributor: Amqx
+      - label: Improved webtoon reader performance
+        description: Crashes due to memory usage, particularly when reading downloaded chapters, should be much less frequent.
+        commit: 3f434d35930b836073cca87552dbbbd97a83686f
+    other_features:
+      - label: Name field when creating backup
+        commit: 579be4596fbc1f619e6e8b1fa889ef75f5527694
+      - label: Improved iOS 27 support
+        description: Later iOS 27 betas changed things and required some style updates.
+        commit: b706e9a7e073dfa2527a272a23f13cc2e7615fb1
+      - label: Double tap history tab to continue reader
+        commit: 95f78ed4769e11420be8c0cb3e858fd85b431786
+        contributor: Amqx
+      - label: Prompt resuming interrupted library refreshes
+        commit: 9619b56c2296e13a60014378e77fcb689a7e6664
+      - label: Properly display failed downloads
+        commit: c4bb4bcb724d0c790e00fb9df1a208043bad3c29
+      - label: Sortable editable list settings
+        description: Sources that have editable list settings can now take into account the order of items.
+        commit: 2e697f3fffef9f32b5131c5351dae7876f43346a
+      - label: Improved animations
+        description: Various transition animations (e.g. home, history, and source loading) have been updated to be more smooth.
+      - label: Migrate and keep history option
+        commit: f8c4cb9d8a0981e3182a8efeb5dbbd61ca4ea39d
+      - label: Download external sources after restoring backup
+        commit: afe715d8ac94d4700d47c07fa7a4f12db110f704
+        contributor: machsix
+      - label: Prefetch pages into next chapter according to preload setting
+        commit: b36b9b25a9d1ef6a74cd7dc09c6fc44f1273c7d1
+        contributor: Amqx
+      - label: Cover image processing support for sources
+        commit: 4acf3c085d542d1962a07f5887c823164cd9fe67
+      - label: Text reader themes
+        commit: 3a5c94830f445b3b902241a134419192b9b3d234
+        contributor: rbertus2000
+      - label: Dismiss expanded cover view with a swipe
+        commit: 5f15a447cdeac7104672d2d558931c9c0855557b
+        contributor: Amqx
+      - label: Tap on series title to global search
+        commit: 35a0da912ce20bd79bb75145eb49c6269df247a6
+        contributor: Amqx
+    other_fixes:
+      - label: Improved backup information loading speed
+        commit: b520f5a97ce6ebafdd65f120af1cad5505559ffb
+        contributor: Amqx
+      - label: Library refresh not rescheduling and not sending notifications
+        commit: 15647b2101a07ccf758ee9ee30b3ed690c50b8eb
+        contributor: Zareix
+      - label: MangaBaka tracker not working
+        commit: 4dde1bccd4ca063439f60d8236e5157f84e7ec3e
+      - label: Table cells appearing with wrong selection state
+        commit: 57954fa03e9ab7f41139cbb3af90d898d578f42b
+        contributor: Amqx
+      - label: Double tracking entries creating for built-in sources
+        commit: 8eea24848e679016c704a36fc5c7e1550599a695
+      - label: AniList tracker showing relogin alert unnecessarily
+        commit: e5f41e907d9dc7f7de2aa7b177a33c5b0dd06537
+      - label: Backup export sheet not showing more than once
+        commit: e3e4199f1bf8a4aa0025b8f0b048a97815ecbe6e
+      - label: Migration sometimes freezing with many sources in use
+        commit: db3bde4b55b318c362417794dba15766a5bc247d
+      - label: Library not filtering correctly after reading
+        commit: 428f9e63ca329bfa85f0ab63ec5d829565da5ccf
+      - label: Handle potential source crashes gracefully
+        description: WASM source programs would crash the app when the program crashed.
+        commit: 538ba99481f0d7aca47b90e2f9d4ed66f38b830c
+      - label: Text reader fixes
+        description: Correct keyboard navigation and crashes
+        commit: 11fc6b7606dc75297c980d47a0956f62edb2c838
+        contributor: maerlin
+      - label: Pages requiring processing by sources not cached correctly
+        commit: 3fd29137df7d8f31724ae715b5da97440f848701
+      - label: History entries for the same date combining in random order
+        description: If chapters have the same read date for the same series, they'll be sorted by chapter number descending.
+        commit: a10c4eed571de40319265c158f23420281546628
+      - label: Memory issues when reading chapters with raw page image data
+        commit: d8d75fcf4d9a5c7811856ff8469bdd25af6bb0a8
+      - label: Reading in series view not working after migrating
+        commit: 1cd3a25ac384c25ced5b557fe1a70a137797b047
+      - label: Useless "Default" option for global reading mode
+        description: This had the same behavior as "Automatic", but it has been removed.
+        commit: 5c8a7922c7e8a6a105eab98c57f6a0f48b5af8b1
+      - label: Chapter filters disappearing after changing sort
+        commit: dff87c697c6707d1459f26aedab6c794a0cc427c
+      - label: Webtoon pages sized wrong on iPad and macOS
+        commit: ec4018c0f3dd62c2ce99c7ef0f36207c97f873b1
+      - label: Zooming not disabled on loading pages
+        commit: 17e511f7e9d91e2d98da8a8e8ccde3a12799e612
+      - label: Improved performance for reading large downloads
+        commit: c60871c737ba92fde88d01aecdd17df04c0a0432
+
   - version: "0.8.4"
     date: 2026-07-03T05:27:41Z
     main_changes:
