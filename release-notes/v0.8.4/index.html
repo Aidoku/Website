@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+		<title>v0.8.4 | Aidoku</title>
+
+		<meta name="description" content="Free and open source manga reader for iOS">
+		<meta name="keywords" content="iOS app, Manga, Reading, Download, TestFlight, AltStore">
+		<meta name="theme-color" content="#ff375f">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="https://aidoku.app/images/favicon-32x32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://aidoku.app/images/apple-touch-icon.png">
+
+		
+	<link rel="stylesheet" href="https://aidoku.app/css/global.css">
+	<link rel="stylesheet" href="https://aidoku.app/css/page.css">
+	<link rel="stylesheet" href="https://aidoku.app/css/releases.css">
+
+
+		
+		
+	</head>
+	<body>
+		
+		
+		
+		<div class="root no-sidebar">
+			
+				<header class="navbar border">
+					<div class="left">
+						<div class="hamburger mobile" onclick="toggleSidebar()">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</div>
+						<a href="/" class="title" aria-label="Home">
+							<img class="icon" width="24" height="24" src="/images/aidoku.svg" alt="Aidoku Logo" />
+						</a>
+						
+						<a href="/" class="title bold mobile">Aidoku</a>
+						
+					</div>
+					<div class="links">
+						<a href="/" class="nav-link ">Home</a>
+						<a href="/help" class="nav-link ">Help</a>
+						<a href="/release-notes" class="nav-link active">Releases</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+				</header>
+			
+
+			
+				<div class="sidebar-mask" onclick="toggleSidebar()"></div>
+				<aside class="sidebar">
+					<div class="nav-links">
+						<a href="/" class="nav-link ">Home</a>
+						<a href="/help" class="nav-link ">Help</a>
+						<a href="/release-notes" class="nav-link active">Releases</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+					
+					
+				</aside>
+			
+
+			
+<main>
+	<div class="doc">
+		<h1>Release Notes</h1>
+		<p>
+			You are viewing a single release. <a href="/release-notes">See all releases</a>
+		</p>
+
+		
+		
+			
+		
+			
+				
+				
+				
+		
+			
+	<section class="release">
+		<h2>
+			<a href="/release-notes/v0.8.4">v0.8.4</a>
+			
+		</h2>
+		<time datetime="2026-07-03T05:27:41Z">
+			July  3, 2026
+		</time>
+		
+		
+		
+			
+			
+			
+			
+				<h3>Main Changes</h3>
+				<ul>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Fixes for iOS 27
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Fixed settings pages freezing the app, along with other minor visual issues.</p>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Improved backup restore time
+										
+											(<a href="https://github.com/Amqx" target="_blank">@Amqx</a>)
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Restores should now take seconds instead of minutes.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/db47ba8a4f8c7534d3aaf6e7ec0373b61dff6fef" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Failed download page retrying
+										
+											(<a href="https://github.com/pxseu" target="_blank">@pxseu</a>)
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Less chance of missing pages in downloaded chapters from sources with aggressive rate limits.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/7dbe4805ae184d2a2e575ae1d53d5b130b64907f" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										New chapter notifications (experimental)
+										
+											(<a href="https://github.com/Zareix" target="_blank">@Zareix</a>)
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>When Aidoku refreshes in the background, notification(s) of new chapters should be sent if enabled.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/e131a7a5520c0bc2a3a0f903409800afea58e9f4" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				</ul>
+			
+		
+			
+			
+			
+			
+				<h3>Other Features</h3>
+				<ul>
+					
+				 		<li>
+							
+								Show days of week in the insights heatmap
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Async JS execution source APIs
+								
+							
+						</li>
+					
+				</ul>
+			
+		
+			
+			
+			
+			
+				<h3>Other Fixes</h3>
+				<ul>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Improved CloudFlare handling
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Fixes some sources with higher level CloudFlare protection sometimes being blocked.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/f27880d0e11fc7fb94b60817e13b57c7a8e83e66" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Incorrect alert showing when adding to library with trackers
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Crash with invalid image dimensions
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Source home page invalid scroll offset
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Some trackers not transferred when migrating
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Reading mode setting not migrating
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Bookmark icon on series covers not properly updating
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Some library series covers not updating when moved
+								
+									(<a href="https://github.com/neldra" target="_blank">@neldra</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Launching via PlayCover not working
+								
+									(<a href="https://github.com/nidghogg" target="_blank">@nidghogg</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Inconsistent history swipe to delete action style
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Some downloaded pages not being readable due to image extension
+								
+							
+						</li>
+					
+				</ul>
+			
+		
+	
+		<a
+			href="https://github.com/Aidoku/Aidoku/releases/tag/v0.8.4"
+			target="_blank"
+			rel="noopener"
+		>
+			GitHub Release
+		</a>
+	</section>
+
+		
+	</div>
+</main>
+
+		</div>
+
+		
+			<script charset="utf-8" src="https://aidoku.app/js/sidebar.js"></script>
+		
+	</body>
+</html>

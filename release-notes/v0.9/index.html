@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+		<title>v0.9 | Aidoku</title>
+
+		<meta name="description" content="Free and open source manga reader for iOS">
+		<meta name="keywords" content="iOS app, Manga, Reading, Download, TestFlight, AltStore">
+		<meta name="theme-color" content="#ff375f">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="https://aidoku.app/images/favicon-32x32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://aidoku.app/images/apple-touch-icon.png">
+
+		
+	<link rel="stylesheet" href="https://aidoku.app/css/global.css">
+	<link rel="stylesheet" href="https://aidoku.app/css/page.css">
+	<link rel="stylesheet" href="https://aidoku.app/css/releases.css">
+
+
+		
+		
+	</head>
+	<body>
+		
+		
+		
+		<div class="root no-sidebar">
+			
+				<header class="navbar border">
+					<div class="left">
+						<div class="hamburger mobile" onclick="toggleSidebar()">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</div>
+						<a href="/" class="title" aria-label="Home">
+							<img class="icon" width="24" height="24" src="/images/aidoku.svg" alt="Aidoku Logo" />
+						</a>
+						
+						<a href="/" class="title bold mobile">Aidoku</a>
+						
+					</div>
+					<div class="links">
+						<a href="/" class="nav-link ">Home</a>
+						<a href="/help" class="nav-link ">Help</a>
+						<a href="/release-notes" class="nav-link active">Releases</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+				</header>
+			
+
+			
+				<div class="sidebar-mask" onclick="toggleSidebar()"></div>
+				<aside class="sidebar">
+					<div class="nav-links">
+						<a href="/" class="nav-link ">Home</a>
+						<a href="/help" class="nav-link ">Help</a>
+						<a href="/release-notes" class="nav-link active">Releases</a>
+						<a href="https://github.com/Aidoku/Aidoku" target="_BLANK" class="nav-link">GitHub</a>
+					</div>
+					
+					
+				</aside>
+			
+
+			
+<main>
+	<div class="doc">
+		<h1>Release Notes</h1>
+		<p>
+			You are viewing a single release. <a href="/release-notes">See all releases</a>
+		</p>
+
+		
+		
+			
+				
+				
+				
+		
+			
+	<section class="release">
+		<h2>
+			<a href="/release-notes/v0.9">v0.9</a>
+			
+				<span class="badge">Latest</span>
+			
+		</h2>
+		<time datetime="2026-09-03T20:17:08Z">
+			September  3, 2026
+		</time>
+		
+		
+		
+			
+			
+			
+			
+				<h3>Main Changes</h3>
+				<ul>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										OCR dictionary support (iOS 18+)
+										
+											(<a href="https://github.com/GameFuzzy" target="_blank">@GameFuzzy</a>)
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Import Yomitan-compatible dictionaries in the app and look up words while reading.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/31dbf32ca9be6bbb80b5ab33b277003098742a76" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Suwayomi built-in source
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Read and track from a Suwayomi instance, just like Komga and Kavita.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/97e5073722b1a7c0ff69a7e17ded9d3f53cc02ac" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Auto scroll for webtoon reader
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Enable and press the play button to scroll without touching your device</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/eb812a56593631c03997de6b5d343b2dbd3bea62" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Fixed CloudFlare handling
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>CloudFlare issues that caused external sources to break should be resolved.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/56455db7a215d359092c99617b1e126ceed7e5d2" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Disable sources option
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Temporarily disable sources without uninstalling them, e.g. if they are broken but could be fixed by an update.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/0ec3eab03e0b0587a966385ab0ea8e96e7f8f515" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Improved library loading speed
+								
+									(<a href="https://github.com/Amqx" target="_blank">@Amqx</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Improved webtoon reader performance
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Crashes due to memory usage, particularly when reading downloaded chapters, should be much less frequent.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/3f434d35930b836073cca87552dbbbd97a83686f" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				</ul>
+			
+		
+			
+			
+			
+			
+				<h3>Other Features</h3>
+				<ul>
+					
+				 		<li>
+							
+								Name field when creating backup
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Improved iOS 27 support
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Later iOS 27 betas changed things and required some style updates.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/b706e9a7e073dfa2527a272a23f13cc2e7615fb1" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Double tap history tab to continue reader
+								
+									(<a href="https://github.com/Amqx" target="_blank">@Amqx</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Prompt resuming interrupted library refreshes
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Properly display failed downloads
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Sortable editable list settings
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Sources that have editable list settings can now take into account the order of items.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/2e697f3fffef9f32b5131c5351dae7876f43346a" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Improved animations
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Various transition animations (e.g. home, history, and source loading) have been updated to be more smooth.</p>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Migrate and keep history option
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Download external sources after restoring backup
+								
+									(<a href="https://github.com/machsix" target="_blank">@machsix</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Prefetch pages into next chapter according to preload setting
+								
+									(<a href="https://github.com/Amqx" target="_blank">@Amqx</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Cover image processing support for sources
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Text reader themes
+								
+									(<a href="https://github.com/rbertus2000" target="_blank">@rbertus2000</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Dismiss expanded cover view with a swipe
+								
+									(<a href="https://github.com/Amqx" target="_blank">@Amqx</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Tap on series title to global search
+								
+									(<a href="https://github.com/Amqx" target="_blank">@Amqx</a>)
+								
+							
+						</li>
+					
+				</ul>
+			
+		
+			
+			
+			
+			
+				<h3>Other Fixes</h3>
+				<ul>
+					
+				 		<li>
+							
+								Improved backup information loading speed
+								
+									(<a href="https://github.com/Amqx" target="_blank">@Amqx</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Library refresh not rescheduling and not sending notifications
+								
+									(<a href="https://github.com/Zareix" target="_blank">@Zareix</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								MangaBaka tracker not working
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Table cells appearing with wrong selection state
+								
+									(<a href="https://github.com/Amqx" target="_blank">@Amqx</a>)
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Double tracking entries creating for built-in sources
+								
+							
+						</li>
+					
+				 		<li>
+							
+								AniList tracker showing relogin alert unnecessarily
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Backup export sheet not showing more than once
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Migration sometimes freezing with many sources in use
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Library not filtering correctly after reading
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Handle potential source crashes gracefully
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>WASM source programs would crash the app when the program crashed.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/538ba99481f0d7aca47b90e2f9d4ed66f38b830c" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Text reader fixes
+										
+											(<a href="https://github.com/maerlin" target="_blank">@maerlin</a>)
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>Correct keyboard navigation and crashes</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/11fc6b7606dc75297c980d47a0956f62edb2c838" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Pages requiring processing by sources not cached correctly
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										History entries for the same date combining in random order
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>If chapters have the same read date for the same series, they&#x27;ll be sorted by chapter number descending.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/a10c4eed571de40319265c158f23420281546628" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Memory issues when reading chapters with raw page image data
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Reading in series view not working after migrating
+								
+							
+						</li>
+					
+				 		<li>
+							
+								<details>
+									<summary>
+										Useless &quot;Default&quot; option for global reading mode
+										
+										<img class="info" src="/images/info.svg" alt="Info" />
+									</summary>
+									<p>This had the same behavior as &quot;Automatic&quot;, but it has been removed.</p>
+									
+										<small>
+											<a href="https://github.com/Aidoku/Aidoku/commit/5c8a7922c7e8a6a105eab98c57f6a0f48b5af8b1" target="_blank">
+												Commit
+											</a>
+										</small>
+									
+								</details>
+							
+						</li>
+					
+				 		<li>
+							
+								Chapter filters disappearing after changing sort
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Webtoon pages sized wrong on iPad and macOS
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Zooming not disabled on loading pages
+								
+							
+						</li>
+					
+				 		<li>
+							
+								Improved performance for reading large downloads
+								
+							
+						</li>
+					
+				</ul>
+			
+		
+	
+		<a
+			href="https://github.com/Aidoku/Aidoku/releases/tag/v0.9"
+			target="_blank"
+			rel="noopener"
+		>
+			GitHub Release
+		</a>
+	</section>
+
+		
+	</div>
+</main>
+
+		</div>
+
+		
+			<script charset="utf-8" src="https://aidoku.app/js/sidebar.js"></script>
+		
+	</body>
+</html>
